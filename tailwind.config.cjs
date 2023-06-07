@@ -9,6 +9,9 @@ module.exports = {
       fontFamily: {
         sans: ["Poppins", ...defaultTheme.fontFamily.sans],
       },
+      content: {
+        'underline': 'url("Needle-Underline.svg")',
+      },
     },
   },
   plugins: [],

@@ -1,17 +1,19 @@
 ---
 import logo from "/logo.svg";
+import underline from '/Needle-Underline.svg'
 ---
 
 <nav class="flex justify-between items-center">
     <div>
         <img src={logo} alt="logo" />
+        <img src=`${underline}`>
     </div>
-    <div class="flex justify-center gap-16">
-        <a href="">Home</a>
+    <div class="flex justify-center gap-16 items-center text-sm ld:text-lg text-gray-600">
+        <a class="hover:text-black hover:after:content-['Hovering']" href="">Home</a>
         <a href="">About</a>
         <a href="">Services</a>
         <a href="">Testimonials</a>
         <a href="">Blog</a>
-        <a href="">Get in Touch</a>
+        <a class="bg-black text-white px-4 py-2 rounded-lg" href="">Get in touch</a>
     </div>
 </nav>
