@@ -8,6 +8,8 @@ module.exports = {
 			},
 			colors: {
 				'custom-gray': '#5E5E5E',
+				'yellowz':'#F7A746',
+				'purple':'7D2389'
 			  },
 		},
 	},
