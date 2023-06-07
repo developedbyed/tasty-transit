@@ -1,19 +1,17 @@
 ---
 import logo from "/logo.svg";
-import underline from '/Needle-Underline.svg'
 ---
 
 <nav class="flex justify-between items-center">
     <div>
         <img src={logo} alt="logo" />
-        <img src=`${underline}`>
     </div>
-    <div class="flex justify-center gap-16 items-center text-sm ld:text-lg text-gray-600">
-        <a class="hover:text-black hover:after:content-['Hovering']" href="">Home</a>
-        <a href="">About</a>
-        <a href="">Services</a>
-        <a href="">Testimonials</a>
-        <a href="">Blog</a>
+    <div class="flex justify-center gap-16 items-center text-sm lg:text-lg text-grey-text font-semibold">
+        <a class=`hover:text-black-text bg-bottom hover:bg-[url('/Needle-Underline.svg')] bg-no-repeat p-4` href="">Home</a>
+        <a class=`hover:text-black-text bg-bottom hover:bg-[url('/Needle-Underline.svg')] bg-no-repeat p-4` href="">About</a>
+        <a class=`hover:text-black-text bg-bottom hover:bg-[url('/Needle-Underline.svg')] bg-no-repeat p-4` href="">Services</a>
+        <a class=`hover:text-black-text bg-bottom hover:bg-[url('/Needle-Underline.svg')] bg-no-repeat p-4` href="">Testimonials</a>
+        <a class=`hover:text-black-text bg-bottom hover:bg-[url('/Needle-Underline.svg')] bg-no-repeat p-4` href="">Blog</a>
         <a class="bg-black text-white px-4 py-2 rounded-lg" href="">Get in touch</a>
     </div>
 </nav>

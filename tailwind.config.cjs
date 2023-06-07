@@ -9,8 +9,11 @@ module.exports = {
       fontFamily: {
         sans: ["Poppins", ...defaultTheme.fontFamily.sans],
       },
-      content: {
-        'underline': 'url("Needle-Underline.svg")',
+      colors: {
+        'black-text': '#262626',
+        'grey-text': '#5E5E5E',
+        'footer-color': '#1D1D1D',
+        'primary-accent': '#FFAE4D'
       },
     },
   },
