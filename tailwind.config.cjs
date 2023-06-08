@@ -15,6 +15,9 @@ module.exports = {
         'footer-color': '#1D1D1D',
         'primary-accent': '#FFAE4D'
       },
+      fontSize: {
+        xxs: '0.625rem',
+      }
     },
   },
   plugins: [],
