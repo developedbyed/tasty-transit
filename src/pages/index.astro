@@ -1,25 +1,8 @@
 ---
-import "../global/global.css";
-import Nav from "../components/Nav.astro";
-import Footer from "../components/Footer.astro";
+import SiteLayout from "../layout/SiteLayout.astro";
+import Home from "../components/Home.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Carter+One&family=Poppins&family=Raleway:wght@600&display=swap"
-			rel="stylesheet"
-		/>
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-</html>
-<body class="font-Poppins m-0 border-box">
-	<Nav />
-	<Footer/>
-</body>
+<SiteLayout>
+	<Home />
+</SiteLayout>

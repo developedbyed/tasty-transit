@@ -5,9 +5,11 @@ import twitter from "/twitter.svg";
 import instagram from "/instagram.svg";
 ---
 
-<footer class="flex w-screen justify-between bg-footer-color px-32 py-2 items-center h-24 text-white">
-    <div class="flexitems-center">
-        <img src={logo} alt="logo"/>
+<footer
+    class="flex w-screen justify-between bg-footer-color px-32 py-2 items-center h-24 text-white"
+>
+    <div class="flex items-center overflow-hidden h-20">
+        <img src={logo} alt="logo" />
     </div>
     <div>
         <div class="flex gap-10">
@@ -16,12 +18,16 @@ import instagram from "/instagram.svg";
                 <img src={twitter} alt="twitter link" />
                 <img src={instagram} alt="instagram link" />
             </div>
-        <div class="border-solid border-l-2 border-white h-12"></div>
-        <div class="flex flex-col text-center gap-2">
-            <p class="font-medium text-xxs underline decoration-primary-accent decoration-4 underline-offset-4">07831 443448</p>
-            <p class="font-semibold text-xs">info@ka-thecoach.co.uk</p>
+            <div class="border-solid border-l-2 border-white h-12"></div>
+            <div class="flex flex-col text-center gap-2">
+                <p
+                    class="font-medium text-xxs underline decoration-primary-accent decoration-4 underline-offset-4"
+                >
+                    07831 443448
+                </p>
+                <p class="font-semibold text-xs">info@ka-thecoach.co.uk</p>
+            </div>
         </div>
     </div>
-</div>
     <p class="font-semibold text-xs">Copyright © 2023 All rights reserved.</p>
 </footer>
