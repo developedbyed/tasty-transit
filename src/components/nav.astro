@@ -1,17 +1,18 @@
 ---
 import logo from "/logo.svg";
+import NavItem from "./NavItem.astro";
 ---
 
-<nav class="flex justify-between items-center">
+<nav class="flex justify-between items-center px-32 pt-6">
     <div>
         <img src={logo} alt="logo" />
     </div>
     <div class="flex justify-center gap-16 items-center text-sm lg:text-lg text-grey-text font-semibold">
-        <a class=`hover:text-black-text bg-bottom hover:bg-[url('/Needle-Underline.svg')] bg-no-repeat p-4` href="">Home</a>
-        <a class=`hover:text-black-text bg-bottom hover:bg-[url('/Needle-Underline.svg')] bg-no-repeat p-4` href="">About</a>
-        <a class=`hover:text-black-text bg-bottom hover:bg-[url('/Needle-Underline.svg')] bg-no-repeat p-4` href="">Services</a>
-        <a class=`hover:text-black-text bg-bottom hover:bg-[url('/Needle-Underline.svg')] bg-no-repeat p-4` href="">Testimonials</a>
-        <a class=`hover:text-black-text bg-bottom hover:bg-[url('/Needle-Underline.svg')] bg-no-repeat p-4` href="">Blog</a>
+        <NavItem href="" title="Home"/>
+        <NavItem href="" title="About"/>
+        <NavItem href="" title="Services"/>
+        <NavItem href="" title="Testimonials"/>
+        <NavItem href="" title="Blog"/>
         <a class="bg-black text-white px-4 py-2 rounded-lg" href="">Get in touch</a>
     </div>
 </nav>
