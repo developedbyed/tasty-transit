@@ -21,7 +21,10 @@ module.exports = {
         hero: "3.5rem",
       },
       height: {
-        heroImage: "51.9375rem",
+        heroImage: "33rem",
+      },
+      width: {
+        heroImage: "33rem",
       },
     },
   },
