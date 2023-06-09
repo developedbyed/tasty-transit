@@ -1,51 +1,50 @@
-
 ---
-
 import MainLayouts from "../layouts/MainLayouts.astro";
 import karenAbout from '../../public/karen-about.jpg';
 import graphic from '../../public/graphic.jpg';
 import karenGuiding from '../../public/karen-guiding.jpg'
 import line from '../../public/line.svg'
-
 ---
 
 <MainLayouts title="About" > 
-<div class=" flex flex-col m-auto items-center justify-center max-w-7xl">
-    <section class=" flex gap-16 m-20">
-        <img src={karenAbout} alt="Karen" class="w-1/2 object-cover" />
-            <div class=" relative flex flex-col justify-center">
-            <h1 class="font-poppins text-[38px] font-bold text-[#1D1D1D] leading-11 py-3"> Unlock Success with <br> proven leadership coaching. <img src={line} class=" 
-                mt-[-10px] pl-1.5 float-right w-3/4 bg-bottom bg-no-repeat" />
-      </h1> 
-           
-                     
+<div class=" flex flex-col m-auto items-center justify-center max-w-screen-2xl">
+    <section class=" flex gap-16 my-5">
+        <img src={karenAbout} alt="Karen" class="w-2/5 object-cover" />
+            <div class=" relative flex flex-col justify-between h-full ">
+                <div class="relative">
+                    <h1 class="font-poppins text-5xl font-bold text-[#1D1D1D] leading-11 py-3"> Unlock Success with <br> proven leadership coaching. 
+                        <div class="flex">
+                            <img src={line} class=" mt-1 float-right bottom-0 w-3/5 -z-20 "/>
+                        </div>
+                    </h1> 
+                </div>
+                <div class=" flex flex-col">
+                    <p class="font-poppins px-4 py-7 text-lg font-medium leading-8 text-[#5E5E5E] "> I am a transformational leadership, business and positive attitude coach, with a successful and proven track record. I have worked with numerous clients from many different backgrounds and business sectors, enabling lasting positive change for my clients.
 
-                <p class="font-poppins px-4 text-[18px] font-medium leading-8 text-[#5E5E5E] "> I am a transformational leadership, business and positive attitude coach, with a successful and proven track record. I have worked with numerous clients from many different backgrounds and business sectors, enabling lasting positive change for my clients.
-
-               
-
-                I hold a Master's Degree in Leadership and Management from Robert Gordon University and a postgraduate certificate in Coaching, from the University of Aberdeen. I am also an accredited coach of the Sue Stone Foundation.
-                
-                My career has been interesting and varied over the last 25 years. Having first qualifying as a Management Accountant, I very quickly moved into leadership and management where I realised people development was my passion. I have held various Director roles in the corporate world, my last being the CEO of a Scottish based company for 7 years. I live in Aberdeen and work all over Scotland and the UK. I have international clients whom I meet on SKYPE, so distance is not a barrier!</p>        
+                    <p class="font-poppins px-4 py-7 text-lg font-medium leading-8 text-[#5E5E5E] ">I hold a Master's Degree in Leadership and Management from Robert Gordon University and a postgraduate certificate in Coaching, from the University of Aberdeen. I am also an accredited coach of the Sue Stone Foundation.</p>
+                    
+                    <p class="font-poppins px-4 py-7 text-lg font-medium leading-8 text-[#5E5E5E] ">My career has been interesting and varied over the last 25 years. Having first qualifying as a Management Accountant, I very quickly moved into leadership and management where I realised people development was my passion. I have held various Director roles in the corporate world, my last being the CEO of a Scottish based company for 7 years. I live in Aberdeen and work all over Scotland and the UK. I have international clients whom I meet on SKYPE, so distance is not a barrier!</p> 
+                </div>       
             </div>  
     </section>
-    <section class=" flex gap-16 m-20">
-        <div class="flex flex-col">
-            <h2 class="font-poppins text-[40px] font-bold text-[#1D1D1D]"> My Approach </h2> 
+    <section class=" flex gap-16 my-5">
+        <div class="flex flex-col border justify-between border-solid border-cyan-900">
+            <div class=" border border-solid border-blue-600 my-auto">
+            <h2 class=" font-poppins text-5xl font-bold text-[#1D1D1D]"> My Approach </h2> 
+                
+            <p class="font-poppins text-xl font-medium py-7 leading-8 text-[#5E5E5E]"> We will start with an informal consultation call. This is for us to get to know each other, for you to share your expectations and desired outcomes, and for me to determine how I can support you proactively. 
 
-            <p class="font-poppins text-[18px] font-medium leading-8 text-[#5E5E5E]"> We will start with an informal consultation call. This is for us to get to know each other, for you to share your expectations and desired outcomes, and for me to determine how I can support you proactively. 
+            <p class="font-poppins text-xl font-medium py-7 leading-8 text-[#5E5E5E]">You will benefit from my many years of practical experience, my coaching experience, and my dedication to life-long learning. I regularly invest in my own development to ensure my approach remains robust and relevant.</p>
 
-            You will benefit from my many years of practical experience, my coaching experience, and my dedication to life-long learning. I regularly invest in my own development to ensure my approach remains robust and relevant.
-
-            Sessions are held in person in private and comfortable environment, or alternatively via video call. If required, extra support is available by phone and email.</p>
-
+            <p class="font-poppins text-xl font-medium py-7 leading-8 text-[#5E5E5E]">Sessions are held in person in private and comfortable environment, or alternatively via video call. If required, extra support is available by phone and email.</p>
+            </div>
         </div>
         <img src={graphic} class="w-1/2 object-cover"/>
     </section>
     <section class="flex gap-16 m-20">
         <img src={karenGuiding} class=" w-1/2 object-cover"/>                
         <div class=" flex flex-col relative">
-            <h2 class="font-poppins text-[40px] font-bold text-[#1D1D1D]"> My Guiding Principles </h2>   
+            <h2 class="font-poppins text-5xl font-bold text-[#1D1D1D]"> My Guiding Principles </h2>   
             <p class="font-poppins text-[18px] font-medium leading-8 text-[#5E5E5E]"> I'm here to help you become your best self through positive, non-judgmental guidance, helping you clarify your motivations and goals. As my client, I see you as a talented, capable individual ready to achieve all your life's ambitions.
 
             My coaching approach is comprehensive, acknowledging that we're shaped by our experiences. I use your past to understand your present and future. I provide structured, unbiased coaching, helping you explore your strengths and weaknesses and overcome self-limiting beliefs.
