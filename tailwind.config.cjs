@@ -9,10 +9,14 @@ module.exports = {
 			colors: {
 				'custom-gray': '#5E5E5E',
 				'yellowz':'#F7A746',
-				'yellowzGradient':'linear-gradient(45deg, #F7A746, #FFDF93)',
+				'yellowzGradient':'#FFDF93',
 				'purple':'#7D2389',
 				'black_background': '#1D1D1D',
 				'orange_ish': '#FFAE4D',
+				'purple_gradient_start': '#7D2E89',
+				'purple_gradient_finish': '#CA52DD',
+				'orange_gradient_start': '#FFAE4D',
+				'orange_gradient_finish': '#FFDF93',
 			  },
 			gradientColorStops:{
 				
