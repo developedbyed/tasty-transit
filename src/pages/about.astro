@@ -9,7 +9,7 @@ import karenGuiding from '../../public/karen-guiding.jpg'
 ---
 
 <MainLayouts title="About" > 
-
+<div class=" flex flex-col m-auto items-center justify-center max-w-7xl">
     <section class=" flex gap-16 m-20">
         <img src={karenAbout} alt="Karen" class="w-1/2 object-cover" />
             <div class="flex flex-col justify-center">
@@ -38,7 +38,7 @@ import karenGuiding from '../../public/karen-guiding.jpg'
     </section>
     <section class="flex gap-16 m-20">
         <img src={karenGuiding} class=" w-1/2 object-cover"/>                
-        <div class=" flex flex-col">
+        <div class=" flex flex-col relative">
             <h2 class="font-poppins text-[40px] font-bold text-[#1D1D1D]"> My Guiding Principles </h2>   
             <p class="font-poppins text-[18px] font-medium leading-8 text-[#5E5E5E]"> I'm here to help you become your best self through positive, non-judgmental guidance, helping you clarify your motivations and goals. As my client, I see you as a talented, capable individual ready to achieve all your life's ambitions.
 
@@ -47,11 +47,8 @@ import karenGuiding from '../../public/karen-guiding.jpg'
             As a team, we respect your personal values, focusing on solutions to your current challenges using your past experiences and values. We'll work collaboratively to create enduring change. Your motivation and engagement can lead us to exceptional results.
 
             Together, we'll achieve remarkable outcomes.</p>
+            <button class="bg-[#707070] w-52 text-white absolute right-0 bottom-0"><a href="/" >Get in touch</a></button>
         </div>
     </section>
-
-
+</div>    
 </MainLayouts>  
-
-
- <!-- hi  -->
