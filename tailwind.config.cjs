@@ -9,12 +9,16 @@ module.exports = {
 			colors: {
 				'custom-gray': '#5E5E5E',
 				'yellowz':'#F7A746',
-				'yellowzGradient':'linear-gradient(45deg, #F7A746, #FFDF93)',
+				'yellowzGradient':'bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400',
 				'purple':'7D2389'
 			  },
+			gradientColorStops:{
+				
+			}
 		},
 	},
 	plugins: [],
 }
 
 
+//linear-gradient(45deg, #F7A746, #FFDF93)
