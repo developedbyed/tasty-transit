@@ -17,10 +17,14 @@ module.exports = {
         "primary-accent": "#FFAE4D",
         "secondary-accent": "#7D2E89",
         "orange-grad-end": "#FFDF93",
+        "service-paragraph": "#E0E0E0",
       },
       fontSize: {
+        xxxs: "0.5rem",
         xxs: "0.625rem",
         hero: "3.2rem",
+        header: "2.5rem",
+        cardPrice: "2rem",
       },
       height: {
         heroImage: "36rem",

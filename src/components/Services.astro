@@ -1,0 +1,22 @@
+---
+import ServicesCard from "./ServicesCard.astro";
+---
+
+<div class="h-screen bg-black flex flex-col items-center p-24">
+    <h1 class="text-header font-bold text-white">
+        Let's boost your <span
+            class="bg-bottom bg-[url('/Header-Underline.svg')] bg-no-repeat py-3"
+            >business</span
+        >.
+    </h1>
+    <p class="text-service-paragraph text-lg w-7/12 text-center px-4 m-4">
+        Choose from individual coaching sessions and packages of 1, 3 or 6
+        sessions, as well as tailored, on-site coaching for individuals or group
+        workshops.
+    </p>
+    <div class="flex gap-4">
+        <ServicesCard />
+        <ServicesCard />
+        <ServicesCard />
+    </div>
+</div>
