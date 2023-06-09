@@ -2,57 +2,40 @@
 import coaching from "../karen-coaching.jpg";
 import Scroll from "../layouts/Scroll.astro";
 
-let underlineGradient = "bg-gradient-to-r from-orange_gradient_start to-orange_gradient_finish bg-no-repeat bg-[length:100%_8px] bg-bottom pb-2"
+let underlineGradient =
+  "bg-gradient-to-r from-orange_gradient_start to-orange_gradient_finish bg-no-repeat bg-[length:100%_8px] bg-bottom pb-2";
 ---
 
-<div class="flex items-center justify-center">
-  <div class="h-screen text-left">
-    <div>
+<div class="flex flex-col h-screen items-center justify-center space-y-16">
+  <div class="flex w-10/12 h-4/6 space-x-20">
+    <div class="flex flex-col w-2/3 space-y-5">
       <h1
-        class= `font-bold text-6xl order-1 mt-3 ml-3 z-20 w-fit ${underlineGradient}`
+        class=`font-bold text-4xl w-fit ${underlineGradient}`
       >
-      Coaching Intro
-    </h1>
+        Coaching Intro
+      </h1>
+      <p class="text-lg">
+        As a coach, my mission is to help you shine and achieve your full
+        potential. Whether you're facing a new challenge at work, stepping into
+        a leadership role, seeking a promotion, or exploring a new direction,
+        I'm here to support you on your journey.
+        <br /><br />
+        Coaching is a transformative process, one that aims to guide you from where
+        you are now to where you aspire to be. Drawing from the principles of sports
+        coaching, I'll work with you to enhance self-awareness, clarify your goals,
+        and bridge the gap between potential and success.
+        <br /><br />
+        Our one-on-one sessions will focus on understanding your values and experiences,
+        and creating a pathway to achieve your personal goals. As we collaborate,
+        I'll encourage you to remain motivated, engaged, and open to the possibilities
+        that coaching brings.
+        <br /><br />
+        Together, we can unlock your best self.
+      </p>
     </div>
-    <div class="grid grid-cols-2">
-      <div class="flex-grow ml-3 mt-4 pt-4">
-        <p>
-          As a coach, my mission is to help you shine and achieve your full
-          potential. Whether you're facing a new challenge at work, stepping
-          into a leadership role, seeking a promotion, or exploring a new
-          direction, I'm here to support you on your journey.
-          <br /><br />
-          Coaching is a transformative process, one that aims to guide you from where
-          you are now to where you aspire to be. Drawing from the principles of sports
-          coaching, I'll work with you to enhance self-awareness, clarify your goals,
-          and bridge the gap between potential and success.
-          <br /><br />
-          Our one-on-one sessions will focus on understanding your values and experiences,
-          and creating a pathway to achieve your personal goals. As we collaborate,
-          I'll encourage you to remain motivated, engaged, and open to the possibilities
-          that coaching brings.
-          <br /><br />
-          Together, we can unlock your best self.
-        </p>
-      </div>
-
-      <div class="flex-grow ml-3 pl-14 pt-4 mt-3">
-        <img src={coaching} alt="karen coaching" />
-      </div>
+    <div class="w-1/3">
+      <img class="h-full w-full" src={coaching} alt="Karen coaching" />
     </div>
-    <Scroll srollTo="#getInTouch" text="scroll to explore coaching packages"/>
   </div>
+  <Scroll srollTo="#getInTouch" text="scroll to explore coaching packages" />
 </div>
-
-<!-- <style>
-  .custom-underline {
-    position: relative;
-    display: inline-block;
-    background-image: linear-gradient(to right, #FFAE4D, #FFDF93);
-    background-repeat: repeat-x;
-    background-position: bottom;
-    background-size: 100% 10px;
-    /* text-decoration: underline;
-    text-decoration-color: orange; */
-  }
-</style> -->
