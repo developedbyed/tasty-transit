@@ -9,9 +9,12 @@ module.exports = {
 			colors: {
 				'custom-gray': '#5E5E5E',
 				'yellowz':'#F7A746',
+				'yellowzGradient':'linear-gradient(45deg, #F7A746, #FFDF93)',
 				'purple':'7D2389'
 			  },
 		},
 	},
 	plugins: [],
 }
+
+
