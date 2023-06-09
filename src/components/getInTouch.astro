@@ -2,21 +2,32 @@
 import map from "../map.png";
 ---
 
-<div class="h-screen flex items-center">
+<div id="getInTouch" class="h-screen flex items-center">
   <div class="w-1/2 h-full">
-    <img src={map}  class="h-full w-full"/>
+    <img src={map} class="h-full w-full" />
   </div>
   <div class="w-1/2 h-full flex flex-col justify-center items-center">
     <form class="flex space-x-20">
-      <div class="flex flex-col space-y-1">
-        <label class="text-sm" for="name">Your name</label>
-        <input id="name" type="text" class="text-md border-b-2 pb-2 focus:border-purple focus:outline-none"/>
-      </div>
-      <div class="flex flex-col space-y-1">
-        <label class="text-sm text-black" for="email">Your email</label>
-        <input id="email" type="email" class="text-md border-b-2 pb-2 focus:border-purple focus:outline-none"/>
-      </div>
+      <label
+        class="text-xs focus-within:text-purple flex flex-col space-y-2"
+        for="name"
+        >Your name
+        <input
+          id="name"
+          type="text"
+          class="text-base border-b-2 pb-2 mt-3 focus:border-purple focus:outline-none"
+        />
+      </label>
+      <label
+        class="text-xs focus-within:text-purple flex flex-col space-y-1"
+        for="email"
+        >Your email
+        <input
+          id="email"
+          type="email"
+          class="text-base border-b-2 pb-2 mt-3 focus:border-purple focus:outline-none"
+        />
+      </label>
     </form>
   </div>
 </div>
-
