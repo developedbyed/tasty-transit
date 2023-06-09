@@ -5,6 +5,7 @@ import MainLayouts from "../layouts/MainLayouts.astro";
 import karenAbout from '../../public/karen-about.jpg';
 import graphic from '../../public/graphic.jpg';
 import karenGuiding from '../../public/karen-guiding.jpg'
+import line from '../../public/line.svg'
 
 ---
 
@@ -12,14 +13,19 @@ import karenGuiding from '../../public/karen-guiding.jpg'
 <div class=" flex flex-col m-auto items-center justify-center max-w-7xl">
     <section class=" flex gap-16 m-20">
         <img src={karenAbout} alt="Karen" class="w-1/2 object-cover" />
-            <div class="flex flex-col justify-center">
-                <h1 class="font-poppins text-[40px] font-bold text-[#1D1D1D]  leading-10 py-3"> Unlock Success with <br/>
-                proven leadership coaching. </h1>
+            <div class=" relative flex flex-col justify-center">
+            <h1 class="font-poppins text-[38px] font-bold text-[#1D1D1D] leading-11 py-3"> Unlock Success with <br> proven leadership coaching. <img src={line} class=" 
+                mt-[-10px] pl-1.5 float-right w-3/4 bg-bottom bg-no-repeat" />
+      </h1> 
+           
+                     
 
                 <p class="font-poppins px-4 text-[18px] font-medium leading-8 text-[#5E5E5E] "> I am a transformational leadership, business and positive attitude coach, with a successful and proven track record. I have worked with numerous clients from many different backgrounds and business sectors, enabling lasting positive change for my clients.
 
-                I hold a Master's Degree in Leadership and Management from Robert Gordon University and a postgraduate certificate in Coaching, from the University of Aberdeen. I am also an accredited coach of the Sue Stone Foundation.
+               
 
+                I hold a Master's Degree in Leadership and Management from Robert Gordon University and a postgraduate certificate in Coaching, from the University of Aberdeen. I am also an accredited coach of the Sue Stone Foundation.
+                
                 My career has been interesting and varied over the last 25 years. Having first qualifying as a Management Accountant, I very quickly moved into leadership and management where I realised people development was my passion. I have held various Director roles in the corporate world, my last being the CEO of a Scottish based company for 7 years. I live in Aberdeen and work all over Scotland and the UK. I have international clients whom I meet on SKYPE, so distance is not a barrier!</p>        
             </div>  
     </section>
