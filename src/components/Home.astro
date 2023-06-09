@@ -1,8 +1,38 @@
 ---
 import karenHome from "/Karen.png";
+import karen from "/homepage-karen.png";
 ---
 
-<div class="flex px-32 mt-20 h-screen w-full">
+<div class="grid md:grid-cols-5 gap-x-4 px-4 md:px-32 md:pr-18 my-10 md:my-36 w-full">
+    <div class="grid md:col-span-3 grid-flow-row auto-rows-max gap-y-12">
+        <h1 class="text-hero font-bold">
+            Your Partner in Acheiving <span class="text-primary-accent"
+                >Leadership</span
+            >
+            <span
+                class="bg-bottom bg-[url('/Hero-underline.svg')] bg-no-repeat py-3"
+                >Success</span
+            >.
+        </h1>
+        <div class="">
+            <p class="text-lg">
+                Ready to transform your leadership and business success?
+            </p>
+            <p class="text-lg">
+                Explore my coaching, workshops, and masterclasses are created to
+                unleash your potential. Begin your journey today.
+            </p>
+        </div>
+        <button class="bg-secondary-accent text-white w-48 p-3 rounded-lg"
+            >Book a Consultation</button>
+    </div>
+    <div class="grid md:col-span-2 mt-24 md:mt-0 place-self-center md:place-self-auto">
+        <div class="h-80 w-80 md:h-heroCircle md:w-heroCircle rounded-full bg-gradient-to-r from-primary-accent to-orange-grad-end">
+            <img src={karen} class="h-96 md:h-heroImage relative inset-x-6 md:inset-x-14 -inset-y-16 md:-inset-y-20"/>
+        </div>
+    </div>
+</div>
+<!-- <div class="flex px-32 mt-20 h-screen w-full">
     <div class="flex flex-col gap-12 mt-8 w-4/5 lg:w-3/5">
         <h1 class="text-hero w-full lg:w-2/3 font-black">
             Your Partner in Acheiving <span class="text-primary-accent"
@@ -29,4 +59,4 @@ import karenHome from "/Karen.png";
     <div>
         <img class="h-heroImage w-heroImage m-0 lg:ml-20" src={karenHome} alt="Karen Homepage Image" />
     </div>
-</div>
+</div> -->

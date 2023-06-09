@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Poppins", ...defaultTheme.fontFamily.sans],
+        sans: ["poppins", ...defaultTheme.fontFamily.sans],
+        poppins: ["Poppins"],
       },
       colors: {
         "black-text": "#262626",
@@ -15,16 +16,19 @@ module.exports = {
         "footer-color": "#1D1D1D",
         "primary-accent": "#FFAE4D",
         "secondary-accent": "#7D2E89",
+        "orange-grad-end": "#FFDF93",
       },
       fontSize: {
         xxs: "0.625rem",
-        hero: "3.5rem",
+        hero: "3.2rem",
       },
       height: {
-        heroImage: "33rem",
+        heroImage: "36rem",
+        heroCircle: "31rem",
       },
       width: {
-        heroImage: "33rem",
+        heroImage: "50rem",
+        heroCircle: "31rem",
       },
     },
   },

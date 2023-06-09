@@ -1,19 +1,21 @@
 ---
 import logo from "/logo.svg";
 import NavItem from "./NavItem.astro";
+import Hamburger from "./Hamburger.astro";
 ---
 
-<nav class="flex justify-between items-center px-32 pt-6">
+<nav class="flex justify-between items-center px-4 md:px-32 pt-6">
     <div>
         <img src={logo} alt="logo" />
     </div>
-    <div class="flex justify-center gap-16 items-center text-sm lg:text-lg text-grey-text font-semibold">
+    <div class="flex gap-10 xxl:gap-16 items-center text-sm lg:text-lg text-grey-text font-semibold">
         <NavItem href="" title="Home"/>
         <NavItem href="" title="About"/>
         <NavItem href="" title="Services"/>
         <NavItem href="" title="Testimonials"/>
         <NavItem href="" title="Blog"/>
-        <button class="bg-black text-white px-4 py-2 rounded-lg">
+        <Hamburger/>
+        <button class="min-w-fit bg-black text-white px-4 py-2 rounded-lg hidden md:flex">
             <a href="">Get in touch</a>
         </button>
     </div>
