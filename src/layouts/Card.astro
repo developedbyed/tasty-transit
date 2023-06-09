@@ -1,0 +1,12 @@
+---
+export interface Props {
+    h1:string;
+}
+const {h1} = Astro.props;
+---
+<div class="flex flex-col space-y-6 py-24 max-w-md min-h-fit px-10 bg-white rounded-3xl">
+    <h1 class="text-black text-left font-bold text-2xl">{h1}</h1>
+    <ul class="flex flex-col space-y-6 text-custom-gray text-left text-lg font-semibold">
+        <slot/>
+    </ul>
+</div>
