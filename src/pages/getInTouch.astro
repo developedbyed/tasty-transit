@@ -1,0 +1,24 @@
+---
+import ContactForm from "../layouts/ContactForm.astro";
+import phoneIcon from "../phoneIcon.svg";
+import emailIcon from "../emailIcon.svg";
+import locationIcon from "../locationIcon.svg";
+---
+
+<div class="flex h-screen items-center justify-center space-x-20">
+  <div class="flex flex-col px-20 text-custom-gray text-lg space-y-16 border-r-2 border-purple">
+    <div class="flex items-center space-x-2 text-left">
+      <img src={phoneIcon} alt="phone" />
+      <p>07831 443448</p>
+    </div>
+    <div class="flex items-center space-x-2 text-left">
+      <img src={emailIcon} alt="email" />
+      <p>info@ka-thecoach.co.uk</p>
+    </div>
+    <div class="flex items-center space-x-2 text-left">
+      <img src={locationIcon} alt="location" />
+      <p>4 North Ythsie By Tarves Ellon Aberdeenshire AB41 4LS</p>
+    </div>
+  </div>
+  <ContactForm />
+</div>

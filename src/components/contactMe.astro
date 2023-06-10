@@ -1,0 +1,21 @@
+---
+import ContactForm from "../layouts/ContactForm.astro";
+import map from "../map.png";
+import facebookBlack from "../facebookBlack.svg"
+import twitterBlack from "../twitterBlack.svg"
+import instagramBlack from "../instagramBlack.svg"
+---
+
+<div id="contactMe" class="h-screen flex items-center">
+  <div class="w-1/2 h-full">
+    <img src={map} class="h-full w-full" />
+  </div>
+  <div class="w-1/2 h-full flex flex-col justify-center items-center">
+    <div class="flex w-1/5 items-center justify-between">
+      <img src={facebookBlack} alt="facebook"/>
+      <img src={twitterBlack} alt="twitter"/>
+      <img src={instagramBlack} alt="instagram"/>
+    </div>
+    <ContactForm/>
+  </div>
+</div>

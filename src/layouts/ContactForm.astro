@@ -1,0 +1,39 @@
+---
+
+---
+<form class="flex flex-col space-y-6">
+    <h1 class="text-left text-4xl font-bold py-12">Get in touch</h1>
+    <div class="flex space-x-20">
+      <label
+        class="text-xs focus-within:text-purple flex flex-col space-y-2 text-custom-gray"
+        for="name"
+        >Your name
+        <input
+          id="name"
+          type="text"
+          class="text-base border-b-2 pb-2 mt-3 focus:border-purple focus:outline-none text-black_background"
+        />
+      </label>
+      <label
+        class="text-xs focus-within:text-purple flex flex-col space-y-1 text-custom-gray"
+        for="email"
+        >Your email
+        <input
+          id="email"
+          type="email"
+          class="text-base border-b-2 pb-2 mt-3 focus:border-purple focus:outline-none text-black_background"
+        />
+      </label>
+    </div>
+    <label
+      class="text-xs focus-within:text-purple flex flex-col space-y-1 text-custom-gray"
+      for="email"
+      >Leave your message
+      <textarea
+        class="h-14 text-base pt-1 mt-3 mb-3 resize-none border-b-2 focus:border-purple focus:outline-none text-black_background"
+      ></textarea>
+    </label>
+    <button class="bg-purple text-white font-semibold rounded-sm py-2"
+      >Submit Message</button
+    >
+  </form>
