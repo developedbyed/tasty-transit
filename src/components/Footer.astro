@@ -6,19 +6,19 @@ import instagram from "/instagram.svg";
 ---
 
 <footer
-    class="flex w-full justify-between bg-footer-color md:px-32 py-2 items-center text-white"
+    class="flex flex-wrap md:flex-nowrap justify-center md:justify-between bg-footer-color md:px-32 py-2 items-center text-white"
 >
     <div class="flex items-center overflow-hidden h-20">
         <img src={logo} alt="logo" />
     </div>
     <div>
-        <div class="flex gap-10">
+        <div class="flex justify-center gap-10">
             <div class="flex gap-6">
                 <img src={facebook} alt="facebook link" />
                 <img src={twitter} alt="twitter link" />
                 <img src={instagram} alt="instagram link" />
             </div>
-            <div class="border-solid border-l-2 border-white h-12"></div>
+            <div class="border-solid border-l-2 border-white h-12 hidden md:block"></div>
             <div class="flex flex-col text-center gap-2">
                 <p
                     class="font-medium text-xxs underline decoration-primary-accent decoration-4 underline-offset-4"
@@ -29,5 +29,5 @@ import instagram from "/instagram.svg";
             </div>
         </div>
     </div>
-    <p class="font-semibold text-xs">Copyright © 2023 All rights reserved.</p>
+    <p class="font-semibold my-4 md:mt-0 text-xs">Copyright © 2023 All rights reserved.</p>
 </footer>
