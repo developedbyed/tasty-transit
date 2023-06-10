@@ -1,15 +1,16 @@
 ---
 import ListItem from "./ListItem.astro";
+const {title, price} = Astro.props;
 ---
 
 <div
-    class="bg-white max-w-lg max-h-lg rounded-lg flex items-center flex-col p-10"
+    class="bg-white max-w-md max-h-lg rounded-xl flex items-center flex-col px-12 py-14 my-12 hover:border-3 hover:border-solid hover:border-secondary-accent"
 >
-    <h1 class="text-grey-text text-lg font-bold">Coaching</h1>
-    <p class="text-cardPrice font-semibold">
-        £49 <span class="text-xxxs font-semibold">/session</span>
+    <h1 class="text-grey-text text-lg font-bold">{title}</h1>
+    <p class="text-cardPrice font-semibold mb-10">
+        £{price} <span class="text-xxxs font-semibold">/session</span>
     </p>
-    <ul class="text-base text-grey-text max-w-md space-y-2 list-inside">
+    <ul class="text-base text-grey-text max-w-md space-y-3 list-inside mb-8">
         <li class="flex gap-2 items-start">
             <img class="pt-1" src="/CheckMark.svg" alt="" />
             Aims to unlock client's full potential and guide them to be their best
@@ -32,9 +33,9 @@ import ListItem from "./ListItem.astro";
             <img class="pt-1" src="/CheckMark.svg" alt="" />
             Offers free initial 30-minute consultation
         </li>
-        <button
-            class="min-w-fit w-full bg-black text-white px-4 py-2 rounded-lg text-center"
-            >Learn More</button
-        >
     </ul>
+    <button
+        class="min-w-fit w-full bg-services-black hover:bg-secondary-accent text-white px-4 py-2 rounded-md text-center"
+        >Learn More</button
+    >
 </div>

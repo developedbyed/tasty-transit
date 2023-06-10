@@ -2,7 +2,7 @@
 import ServicesCard from "./ServicesCard.astro";
 ---
 
-<div class="h-screen bg-black flex flex-col items-center p-24">
+<div class="h-screen bg-services-black flex flex-col items-center p-24">
     <h1 class="text-header font-bold text-white">
         Let's boost your <span
             class="bg-bottom bg-[url('/Header-Underline.svg')] bg-no-repeat py-3"
@@ -14,9 +14,9 @@ import ServicesCard from "./ServicesCard.astro";
         sessions, as well as tailored, on-site coaching for individuals or group
         workshops.
     </p>
-    <div class="flex gap-4">
-        <ServicesCard />
-        <ServicesCard />
-        <ServicesCard />
+    <div class="flex gap-6">
+        <ServicesCard title="Coaching" price="49"/>
+        <ServicesCard title="Workshop" price="99"/>
+        <ServicesCard title="Masterclass" price="120"/>
     </div>
 </div>

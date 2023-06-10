@@ -18,6 +18,7 @@ module.exports = {
         "secondary-accent": "#7D2E89",
         "orange-grad-end": "#FFDF93",
         "service-paragraph": "#E0E0E0",
+        "services-black": "#1E1E1E",
       },
       fontSize: {
         xxxs: "0.5rem",
@@ -34,6 +35,9 @@ module.exports = {
         heroImage: "50rem",
         heroCircle: "31rem",
       },
+      boxShadow: {
+        "test-image": "30px 25px 0px -2px rgba(125,46,137,1)",
+      }
     },
   },
   plugins: [],
