@@ -4,11 +4,13 @@ import map from "../map.png";
 import facebookBlack from "../facebookBlack.svg"
 import twitterBlack from "../twitterBlack.svg"
 import instagramBlack from "../instagramBlack.svg"
+import GoogleApiWrapper from "./GoogleApiWrapper.jsx";
 ---
 
 <div id="contactMe" class="h-screen flex items-center">
   <div class="w-1/2 h-full">
-    <img src={map} class="h-full w-full" />
+    <!-- <img src={map} class="h-full w-full" /> -->
+    <GoogleApiWrapper client:load/>
   </div>
   <div class="w-1/2 h-full flex flex-col justify-center items-center">
     <div class="flex w-1/5 items-center justify-between">
