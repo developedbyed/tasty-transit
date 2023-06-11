@@ -6,18 +6,32 @@ import karenGuiding from '../../public/karen-guiding.jpg'
 import line from '../../public/line.svg'
 ---
 
+
+
 <MainLayouts title="About" > 
 <div class=" flex flex-col m-auto items-center justify-center max-w-screen-2xl">
     <section class=" flex gap-16 my-5">
         <img src={karenAbout} alt="Karen" class="w-2/5 object-cover" />
-            <div class=" relative flex flex-col justify-between h-full ">
-                <div class="relative">
-                    <h1 class="font-poppins text-5xl font-bold text-[#1D1D1D] leading-11 py-3"> Unlock Success with <br> proven leadership coaching. 
-                        <div class="flex">
-                            <img src={line} class=" mt-1 float-right bottom-0 w-3/5 -z-20 "/>
-                        </div>
-                    </h1> 
-                </div>
+            <div class=" relative flex flex-col justify-between h-full ">       
+                <h1 class="font-poppins text-5xl font-bold text-[#1D1D1D] leading-11 py-3"> Unlock Success with proven                        
+                    <div class=" relative inline-block h-full">
+                        <svg 
+                        class=" absolute bottom-0 left-0 -z-10 pt-5" 
+                        viewBox="0 0 247 15"   
+                        fill="none" 
+                        xmlns="http://www.w3.org/2000/svg"> 
+                        <path d="M0 0H123.5H247V15H166.49H0V0Z"         fill="url(#paint0_linear_131_64)"/>
+                        <defs>
+                            <linearGradient id="paint0_linear_131_64" x1="0" y1="7.5" x2="247" y2="7.5" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FFAE4D"/>
+                                <stop offset="1" stop-color="#FFDF93"/>
+                            </linearGradient>
+                            </defs>
+                        </svg>                                
+                        <span>leadership coaching.</span>
+                    </div>
+                </h1> 
+                
                 <div class=" flex flex-col">
                     <p class="font-poppins px-4 py-7 text-lg font-medium leading-8 text-[#5E5E5E] "> I am a transformational leadership, business and positive attitude coach, with a successful and proven track record. I have worked with numerous clients from many different backgrounds and business sectors, enabling lasting positive change for my clients.
 
@@ -27,32 +41,66 @@ import line from '../../public/line.svg'
                 </div>       
             </div>  
     </section>
-    <section class=" flex gap-16 my-5">
-        <div class="flex flex-col border justify-between border-solid border-cyan-900">
-            <div class=" border border-solid border-blue-600 my-auto">
-            <h2 class=" font-poppins text-5xl font-bold text-[#1D1D1D]"> My Approach </h2> 
-                
-            <p class="font-poppins text-xl font-medium py-7 leading-8 text-[#5E5E5E]"> We will start with an informal consultation call. This is for us to get to know each other, for you to share your expectations and desired outcomes, and for me to determine how I can support you proactively. 
+    <section class=" flex gap-16 mt-16 mb-0">
+        <div class="flex flex-col justify-between">
+            <div class=" my-auto">
+                <div class=" relative inline-block">
+                    <h2 class=" font-poppins text-5xl font-bold text-[#1D1D1D]"> My Approach 
+                    </h2>
+                    <svg 
+                    class=" absolute bottom-0 w-full -z-10"                    
+                    viewBox="0 0 247 15"   
+                    fill="none" 
+                    xmlns="http://www.w3.org/2000/svg"> 
+                        <path d="M0 0H123.5H247V15H166.49H0V0Z"         fill="url(#paint0_linear_131_64)"/>
+                        <defs>
+                            <linearGradient id="paint0_linear_131_64" x1="0" y1="7.5" x2="247" y2="7.5" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FFAE4D"/>
+                                <stop offset="1" stop-color="#FFDF93"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>  
+                </div> 
+                    
+                <p class="font-poppins text-xl font-medium py-7 leading-8 text-[#5E5E5E]"> We will start with an informal consultation call. This is for us to get to know each other, for you to share your expectations and desired outcomes, and for me to determine how I can support you proactively. 
 
-            <p class="font-poppins text-xl font-medium py-7 leading-8 text-[#5E5E5E]">You will benefit from my many years of practical experience, my coaching experience, and my dedication to life-long learning. I regularly invest in my own development to ensure my approach remains robust and relevant.</p>
+                <p class="font-poppins text-xl font-medium py-7 leading-8 text-[#5E5E5E]">You will benefit from my many years of practical experience, my coaching experience, and my dedication to life-long learning. I regularly invest in my own development to ensure my approach remains robust and relevant.</p>
 
-            <p class="font-poppins text-xl font-medium py-7 leading-8 text-[#5E5E5E]">Sessions are held in person in private and comfortable environment, or alternatively via video call. If required, extra support is available by phone and email.</p>
+                <p class="font-poppins text-xl font-medium py-7 leading-8 text-[#5E5E5E]">Sessions are held in person in private and comfortable environment, or alternatively via video call. If required, extra support is available by phone and email.</p>
             </div>
         </div>
         <img src={graphic} class="w-1/2 object-cover"/>
     </section>
-    <section class="flex gap-16 m-20">
+    <section class="flex gap-16 mt-0">
         <img src={karenGuiding} class=" w-1/2 object-cover"/>                
-        <div class=" flex flex-col relative">
-            <h2 class="font-poppins text-5xl font-bold text-[#1D1D1D]"> My Guiding Principles </h2>   
-            <p class="font-poppins text-[18px] font-medium leading-8 text-[#5E5E5E]"> I'm here to help you become your best self through positive, non-judgmental guidance, helping you clarify your motivations and goals. As my client, I see you as a talented, capable individual ready to achieve all your life's ambitions.
+        <div class=" flex my-14 pt-16 flex-col relative">
+            <div class=" relative inline-block">
+                <h2 class="font-poppins text-5xl font-bold text-[#1D1D1D]"> My Guiding Principles 
+                </h2>
+                <svg 
+                    class=" absolute bottom-0 left-0 w-full -z-10"                    
+                    viewBox="0 0 247 15"   
+                    fill="none" 
+                    xmlns="http://www.w3.org/2000/svg"> 
+                        <path d="M0 0H123.5H247V15H166.49H0V0Z"         fill="url(#paint0_linear_131_64)"/>
+                        <defs>
+                            <linearGradient id="paint0_linear_131_64" x1="0" y1="7.5" x2="247" y2="7.5" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FFAE4D"/>
+                                <stop offset="1" stop-color="#FFDF93"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>  
+            </div>     
 
-            My coaching approach is comprehensive, acknowledging that we're shaped by our experiences. I use your past to understand your present and future. I provide structured, unbiased coaching, helping you explore your strengths and weaknesses and overcome self-limiting beliefs.
 
-            As a team, we respect your personal values, focusing on solutions to your current challenges using your past experiences and values. We'll work collaboratively to create enduring change. Your motivation and engagement can lead us to exceptional results.
+            <p class="font-poppins text-xl font-medium py-7 leading-8 text-[#5E5E5E]"> I'm here to help you become your best self through positive, non-judgmental guidance, helping you clarify your motivations and goals. As my client, I see you as a talented, capable individual ready to achieve all your life's ambitions.</p>
+
+            <p class="font-poppins text-xl font-medium py-7 leading-8 text-[#5E5E5E]">My coaching approach is comprehensive, acknowledging that we're shaped by our experiences. I use your past to understand your present and future. I provide structured, unbiased coaching, helping you explore your strengths and weaknesses and overcome self-limiting beliefs.</p>
+
+            <p class="font-poppins text-xl font-medium py-7 leading-8 text-[#5E5E5E]">As a team, we respect your personal values, focusing on solutions to your current challenges using your past experiences and values. We'll work collaboratively to create enduring change. Your motivation and engagement can lead us to exceptional results.
 
             Together, we'll achieve remarkable outcomes.</p>
-            <button class="bg-[#707070] w-52 text-white absolute right-0 bottom-0"><a href="/" >Get in touch</a></button>
+            <button class="bg-[#1D1D1D] w-52 p-4 font-medium text-xl rounded-lg text-white absolute right-0 bottom-0"><a href="/" >Get in touch</a></button>
         </div>
     </section>
 </div>    
