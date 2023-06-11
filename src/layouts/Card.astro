@@ -4,9 +4,9 @@ export interface Props {
 }
 const {h1} = Astro.props;
 ---
-<div class="relative flex flex-col rounded-3xl bg-white w-1/3 px-7 py-12">
-    <h1 class="text-black space-y-2 text-left font-bold text-2xl pb-1 h-1/6">{h1}</h1>
-    <ul class="flex flex-col space-y-2 text-custom-gray text-left text-lg font-semibold">
+<div class="relative lg:flex lg:flex-col lg:rounded-3xl lg:bg-white lg:w-1/3 lg:px-7 lg:py-12">
+    <h1 class=" lg:text-black lg:space-y-2 lg:text-left lg:font-bold text-2xl lg:pb-1 lg:h-1/6">{h1}</h1>
+    <ul class="lg:flex lg:flex-col lg:space-y-2 lg:text-custom-gray lg:text-left lg:text-lg lg:font-semibold">
         <slot/>
     </ul>
 </div>

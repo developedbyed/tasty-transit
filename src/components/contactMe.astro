@@ -7,13 +7,13 @@ import instagramBlack from "../instagramBlack.svg"
 import GoogleApiWrapper from "./GoogleApiWrapper.jsx";
 ---
 
-<div id="contactMe" class="h-screen flex items-center">
-  <div class="w-1/2 h-full">
+<div id="contactMe" class="lg:h-screen lg:flex lg:items-center">
+  <div class="lg:w-1/2 lg:h-full lg:z-0">
     <!-- <img src={map} class="h-full w-full" /> -->
     <GoogleApiWrapper client:load/>
   </div>
-  <div class="w-1/2 h-full flex flex-col justify-center items-center">
-    <div class="flex w-1/5 items-center justify-between">
+  <div class="lg:w-1/2 lg:h-full lg:flex lg:flex-col lg:justify-center lg:items-center lg:z-20">
+    <div class="lg:flex lg:w-1/5 lg:items-center lg:justify-between">
       <img src={facebookBlack} alt="facebook"/>
       <img src={twitterBlack} alt="twitter"/>
       <img src={instagramBlack} alt="instagram"/>

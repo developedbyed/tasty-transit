@@ -6,15 +6,20 @@ let underlineGradient =
   "bg-gradient-to-r from-orange_gradient_start to-orange_gradient_finish bg-no-repeat bg-[length:100%_8px] bg-bottom pb-2";
 ---
 
-<div class="flex flex-col h-screen items-center justify-center space-y-16">
-  <div class="flex w-10/12 h-4/6 space-x-20 mt-20">
-    <div class="flex flex-col w-2/3 space-y-5">
+<div class="lg:flex lg:flex-col lg:h-screen lg:items-center lg:justify-center lg:space-y-16 flex flex-col h-screen items-center justify-center space-y-16">
+  <div class="lg:flex lg:w-10/12 lg:h-4/6 lg:space-x-20 lg:mt-20
+              flex w-screen h-screen space-x-20 mt-20">
+
+    <div class="lg:flex lg:flex-col lg:w-2/3 lg:space-y-5
+                flex flex-col w-screen space-y-5">
       <h1
-        class=`font-bold text-4xl w-fit ${underlineGradient}`
+        class=`lg:font-bold lg:text-4xl lg:w-fit ${underlineGradient}
+              font-bold text-xl w-fit ${underlineGradient}`
       >
         Coaching Intro
       </h1>
-      <p class="text-lg text-custom-gray">
+      <p class="lg:text-lg text-custom-gray
+                text-xs text-custom-gray">
         As a coach, my mission is to help you shine and achieve your full
         potential. Whether you're facing a new challenge at work, stepping into
         a leadership role, seeking a promotion, or exploring a new direction,
@@ -33,8 +38,10 @@ let underlineGradient =
         Together, we can unlock your best self.
       </p>
     </div>
-    <div class="w-1/3">
-      <img class="h-full w-full" src={coaching} alt="Karen coaching" />
+    <div class="lg:w-1/3
+                w-1/3">
+      <img class="lg:h-full lg:w-full
+                  h-full w-full" src={coaching} alt="Karen coaching" />
     </div>
   </div>
   <Scroll srollTo="#coachingPackages" text="scroll to explore coaching packages" />

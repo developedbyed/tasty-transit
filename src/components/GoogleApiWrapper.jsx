@@ -10,7 +10,7 @@ const MapContainer = (props) => {
 
   const customStyles = [
     {
-      featureType: 'transit.line',
+      featureType: 'road.local',
       elementType: 'geometry',
       stylers: [
         {
@@ -39,7 +39,6 @@ const MapContainer = (props) => {
   };
 
   return (
-    <div className="w-full h-full">
       <Map
         google={props.google}
         zoom={14}
@@ -54,7 +53,6 @@ const MapContainer = (props) => {
           icon={markerIcon}
         />
       </Map>
-    </div>
   );
 };
 
