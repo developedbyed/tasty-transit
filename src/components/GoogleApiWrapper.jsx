@@ -2,10 +2,18 @@
 import React from "react";
 import { Map, GoogleApiWrapper, Marker } from "google-maps-react";
 
+
 const MapContainer = (props) => {
+
+  // const mapStyles = {
+  //   width: "50%",
+  //   height: "100%",
+  // };
+  const isMobileScreen = window.innerWidth <= 639;
+
   const mapStyles = {
-    width: "50%",
-    height: "100%",
+    width: isMobileScreen ? "100%" : "50%",
+    height: isMobileScreen ? "48%" : "100%",
   };
 
   const customStyles = [
