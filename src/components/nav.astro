@@ -4,19 +4,19 @@ import NavItem from "./NavItem.astro";
 import Hamburger from "./Hamburger.astro";
 ---
 
-<nav class="flex justify-between items-center px-4 md:px-32 pt-2 md:pt-6">
+<header class="flex justify-between items-center px-4 md:px-32 pt-2 md:pt-6">
     <div>
         <img src={logo} alt="logo" />
     </div>
-    <div class="flex gap-10 xl:gap-16 items-center text-sm lg:text-lg text-grey-text font-semibold">
-        <NavItem href="" title="Home"/>
-        <NavItem href="" title="About"/>
-        <NavItem href="" title="Services"/>
-        <NavItem href="" title="Testimonials"/>
-        <NavItem href="" title="Blog"/>
+    <nav class="flex gap-10 xl:gap-16 items-center text-sm lg:text-lg text-grey-text font-semibold">
+        <NavItem href="/" title="Home"/>
+        <NavItem href="/about" title="About"/>
+        <NavItem href="/services" title="Services"/>
+        <NavItem href="/testimonials" title="Testimonials"/>
+        <NavItem href="/blog" title="Blog"/>
         <Hamburger/>
         <button class="min-w-fit bg-black text-white px-4 py-2 rounded-lg hidden md:flex">
-            <a href="">Get in touch</a>
+            <a href="/contact">Get in touch</a>
         </button>
-    </div>
-</nav>
+    </nav>
+</header>
