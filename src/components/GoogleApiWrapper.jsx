@@ -9,7 +9,7 @@ const MapContainer = (props) => {
   //   width: "50%",
   //   height: "100%",
   // };
-  const isMobileScreen = window.innerWidth <= 639;
+  const isMobileScreen = window.innerWidth <= 767;
 
   const mapStyles = {
     width: isMobileScreen ? "100%" : "50%",
