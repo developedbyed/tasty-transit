@@ -36,7 +36,8 @@ module.exports = {
         heroCircle: "31rem",
       },
       boxShadow: {
-        "test-image": "30px 25px 0px -2px rgba(125,46,137,1)",
+        "test-image-large": "30px 25px 0px -2px rgba(125,46,137,1)",
+        "test-image-small": "20px 18px 0px -2px rgba(125,46,137,1)",
       }
     },
   },
