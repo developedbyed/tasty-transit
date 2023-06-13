@@ -16,7 +16,7 @@ let borderBottom = "border-b-8 border-b-orange_ish";
   <section
     class="flex flex-col mt-7 w-11/12 items-center space-y-3 pt-2 sm:space-y-4 sm:pt-4 md:space-y-5 md:pt-6 lg:space-y-5 lg:pt-10 lg:max-w-2xl "
   >
-    <h1 class=`text-white text-center font-bold text-xl md:text-2xl lg:text-4xl ${underlineGradient} `>
+    <h1 class=`text-white text-center font-bold text-xl md:text-2xl lg:text-4xl z-10 ${underlineGradient} `>
       Coaching Packages
     </h1>
     <p class="text-white text-center text-sm md:text-base lg:text-lg">
@@ -26,7 +26,7 @@ let borderBottom = "border-b-8 border-b-orange_ish";
       call.
     </p>
   </section>
-  <section class="flex flex-col space-y-5 w-11/12 md:flex-row md:space-y-0 md:space-x-6 md:justify-center lg:space-x-10">
+  <section class="appear flex flex-col space-y-5 w-11/12 md:flex-row md:space-y-0 md:space-x-6 md:justify-center lg:space-x-10">
     <CardSingleSession />
     <CardThreeSessionPackage />
     <CardSixSessionPackage />
@@ -36,6 +36,7 @@ let borderBottom = "border-b-8 border-b-orange_ish";
 
 
 <style>
+
   .animated-underline {
     position: relative;
     overflow: hidden;
@@ -47,31 +48,36 @@ let borderBottom = "border-b-8 border-b-orange_ish";
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 4px;
+    height: 5px;
     background: linear-gradient(to right, #FFAE4D, #FFDF93);
     opacity: 1;
     animation: flickerBackground 4s infinite;
+    z-index: -1;
   }
 
   @keyframes flickerBackground {
-    0% {
-      opacity: 0.9;
-    }
-    20% {
+    0%, 100% {
       opacity: 1;
     }
-    40% {
-      opacity: 0.9;
-    }
-    60% {
-      opacity: 1;
-    }
-    80% {
-      opacity: 0.9;
-    }
-    100% {
-      opacity: 1;
+    50% {
+      opacity: 0.75;
     }
   }
 </style>
 
+<script>
+function Appear() {
+  var cards = document.querySelectorAll('.card-appear');
+  var screenPosition = window.innerHeight / 2;
+
+  cards.forEach(function(card) {
+    var cardPosition = card.getBoundingClientRect().top;
+
+    if (cardPosition < screenPosition) {
+      card.classList.add('appear');
+    }
+  });
+}
+
+window.addEventListener('scroll', Appear);
+</script>
