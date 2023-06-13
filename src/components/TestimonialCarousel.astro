@@ -1,42 +1,19 @@
 ---
 import CarouselButton from "./Carousel-button.astro";
-
+import CarouselItem from "./Carousel-item.astro";
+import testimonials from "./testimonials";
 ---
 
-<div class="flex flex-col gap-4 px-4 md:w-3/5 text-center">
-  
+<div class="flex flex-col gap-6 px-4 md:w-4/5 text-center">  
   <ul>
-    <article class="flex" id="slides">
-      <h3 class="mb-4">name</h3>
-      <p class="text-grey-text">
-        " The improvements have helped shape increased productivity, profits and
-        performance. We would have no hesitation in recommending Karen to other
-        businesses that are keen to develop and grow both in the market and their
-        own talent.”
-      </p>
-    </article>
-
-    <article id="slides">
-    <h3 class="mb-4">name</h3>
-    <p class="text-center text-green-400">
-      " The improvements have helped shape increased productivity, profits and
-      performance. We would have no hesitation in recommending Karen to other
-      businesses that are keen to develop and grow both in the market and their
-      own talent.”
-    </p>
-    </article>
-  
-  <article id="slides">
-    <h3 class="mb-4">name</h3>
-    <p class="text-center text-grey-text">
-      " The improvements have helped shape increased productivity, profits and
-      performance. We would have no hesitation in recommending Karen to other
-      businesses that are keen to develop and grow both in the market and their
-      own talent.”
-    </p>
-  </artile>
+    <CarouselItem name={testimonials[0].name} message={testimonials[0].message}/>
+    <CarouselItem name={testimonials[1].name} message={testimonials[1].message}/>
+    <CarouselItem name={testimonials[2].name} message={testimonials[2].message}/>
+    <CarouselItem name={testimonials[3].name} message={testimonials[3].message}/>
+    <CarouselItem name={testimonials[4].name} message={testimonials[4].message}/>
+    <CarouselItem name={testimonials[5].name} message={testimonials[5].message}/>
 </ul>
-<ul>
+<ul class="flex justify-center gap-3">
   <CarouselButton/>
   <CarouselButton/>
   <CarouselButton/>
