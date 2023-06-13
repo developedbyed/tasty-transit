@@ -16,8 +16,12 @@ import TestimonialCarousel from "./TestimonialCarousel.astro";
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
         >
-            <path d="M0 0H247V15H166.49H0V0Z" fill="url(#paint0_linear_2_487)"
-            ></path>
+            <path
+                d="M0 0H247V15H166.49H0V0Z"
+                fill="url(#paint0_linear_2_487)"
+                stroke="#FFAE4D"
+                stroke-width="4"
+                class="path"></path>
             <defs>
                 <linearGradient
                     id="paint0_linear_2_487"
@@ -45,3 +49,20 @@ import TestimonialCarousel from "./TestimonialCarousel.astro";
         />
     </div>
 </div>
+
+<style>
+    .path {
+        stroke-dasharray: 198;
+        stroke-dashoffset: 198;
+        animation: dash 5s forwards;
+    }
+
+    @keyframes dash {
+        from {
+            stroke-dashoffset: 500;
+        }
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+</style>
