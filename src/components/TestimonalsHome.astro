@@ -19,8 +19,6 @@ import TestimonialCarousel from "./TestimonialCarousel.astro";
             <path
                 d="M0 0H247V15H166.49H0V0Z"
                 fill="url(#paint0_linear_2_487)"
-                stroke="#FFAE4D"
-                stroke-width="4"
                 class="path"></path>
             <defs>
                 <linearGradient
@@ -51,18 +49,41 @@ import TestimonialCarousel from "./TestimonialCarousel.astro";
 </div>
 
 <style>
-    .path {
-        stroke-dasharray: 198;
-        stroke-dashoffset: 198;
-        animation: dash 5s forwards;
+    @keyframes slide {
+        10% {
+            transform: translateX(-180px);
+        }
+        20% {
+            transform: translateX(-160px);
+        }
+        30% {
+            transform: translateX(-140px);
+        }
+        40% {
+            transform: translateX(-120px);
+        }
+        50% {
+            transform: translateX(-100px);
+        }
+        60% {
+            transform: translateX(-80px);
+        }
+        70% {
+            transform: translateX(-60px);
+        }
+        80% {
+            transform: translateX(-40px);
+        }
+        90% {
+            transform: translateX(-20px);
+        }
+        100% {
+            transform: translateX(0px);
+        }
     }
 
-    @keyframes dash {
-        from {
-            stroke-dashoffset: 500;
-        }
-        to {
-            stroke-dashoffset: 0;
-        }
-    }
+   .path {
+  transform: translateX(-200px);
+  animation: slide 1s ease-in forwards;
+}
 </style>
