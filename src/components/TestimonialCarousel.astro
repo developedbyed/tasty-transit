@@ -1,7 +1,12 @@
+---
+import CarouselButton from "./Carousel-button.astro";
+
+---
+
 <div class="flex flex-col gap-4 px-4 md:w-3/5 text-center">
   
-  <div>
-    <div class="flex" id="slides">
+  <ul>
+    <article class="flex" id="slides">
       <h3 class="mb-4">name</h3>
       <p class="text-grey-text">
         " The improvements have helped shape increased productivity, profits and
@@ -9,19 +14,19 @@
         businesses that are keen to develop and grow both in the market and their
         own talent.”
       </p>
-    </div>
+    </article>
 
-    <div id="slides">
+    <article id="slides">
     <h3 class="mb-4">name</h3>
-    <p class="text-center text-grey-text">
+    <p class="text-center text-green-400">
       " The improvements have helped shape increased productivity, profits and
       performance. We would have no hesitation in recommending Karen to other
       businesses that are keen to develop and grow both in the market and their
       own talent.”
     </p>
-  </div>
+    </article>
   
-  <div id="slides">
+  <article id="slides">
     <h3 class="mb-4">name</h3>
     <p class="text-center text-grey-text">
       " The improvements have helped shape increased productivity, profits and
@@ -29,22 +34,16 @@
       businesses that are keen to develop and grow both in the market and their
       own talent.”
     </p>
-  </div>
-</div>
-<div>
-  <span
-  id="dot"
-  class="cursor-pointer rounded-full h-4 w-4 inline-block bg-grey-text duration-300"
-  ></span>
-  <span
-    id="dot"
-    class="cursor-pointer rounded-full h-4 w-4 inline-block bg-grey-text duration-300"
-    ></span>
-    <span
-    id="dot"
-    class="cursor-pointer rounded-full h-4 w-4 inline-block bg-grey-text duration-1000 active:bg-primary-accent"
-    ></span>
-  </div>
+  </artile>
+</ul>
+<ul>
+  <CarouselButton/>
+  <CarouselButton/>
+  <CarouselButton/>
+  <CarouselButton/>
+  <CarouselButton/>
+  <CarouselButton/>
+</ul>
 </div>
 <script>
   const slides = document.querySelectorAll("#dot");
