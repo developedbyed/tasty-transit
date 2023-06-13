@@ -2,8 +2,9 @@
 import coaching from "../karen-coaching.jpg";
 import Scroll from "../layouts/Scroll.astro";
 
-let underlineGradient =
-  "bg-gradient-to-r from-orange_gradient_start to-orange_gradient_finish bg-no-repeat bg-[length:100%_8px] bg-bottom pb-2";
+// let underlineGradient = "bg-gradient-to-r from-orange_gradient_start to-orange_gradient_finish bg-no-repeat bg-[length:100%_4px] bg-bottom pb-0 lg:bg-[length:100%_8px] lg:pb-1";
+let underlineGradient = "animated-underline";
+
 ---
 
 <div class="lg:flex lg:flex-col lg:h-screen lg:items-center lg:justify-center lg:space-y-16 
@@ -15,14 +16,14 @@ flex flex-col min-h-screen items-center justify-center space-y-16">
     <div class="lg:flex lg:flex-col lg:w-2/3 lg:space-y-5
     flex flex-col w-full space-y-3">
       <h1
-        class=`lg:font-bold lg:text-4xl lg:w-fit ${underlineGradient}
-        font-bold text-2xl w-fit ${underlineGradient} `
+        class=` font-bold text-xl w-fit md:md:text-2xl lg:font-bold lg:text-4xl lg:w-fit ${underlineGradient}
+       ${underlineGradient} `
       >
         Coaching Intro
       </h1>
 
-      <p class="lg:text-lg text-custom-gray
-      text-base text-custom-gray">
+      <p class=" text-custom-gray
+      text-sm md:text-base lg:text-lg">
         As a coach, my mission is to help you shine and achieve your full
         potential. Whether you're facing a new challenge at work, stepping into
         a leadership role, seeking a promotion, or exploring a new direction,
@@ -49,3 +50,43 @@ flex flex-col min-h-screen items-center justify-center space-y-16">
   </div>
   <Scroll srollTo="#coachingPackages" text="scroll to explore coaching packages" />
 </div>
+
+<style>
+  .animated-underline {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .animated-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #FFAE4D, #FFDF93);
+    opacity: 1;
+    animation: flickerBackground 4s infinite;
+  }
+
+  @keyframes flickerBackground {
+    0% {
+      opacity: 0.9;
+    }
+    20% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 0.9;
+    }
+    60% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+</style>
