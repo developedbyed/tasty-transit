@@ -3,8 +3,8 @@ const {name, message} = Astro.props;
 ---
 
 <li>
-    <article class="flex" id="slides">
-      <h3 class="mb-4 font-bold text-2xl">{name}</h3>
+    <article class="flex min-h-fit md:h-56" id="slides">
+      <h3 class="mb-4 font-bold text-2xl">{name.toUpperCase()}</h3>
         <img src='quote-icon.png' alt=""/>
       <p class="text-grey-text">
         {message}"
