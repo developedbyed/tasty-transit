@@ -42,8 +42,8 @@ import testimonials from "./testimonials";
 
   function showSlides(n: number) {
     let i;
-    let slides = document.querySelectorAll("#slides");
-    let dots = document.querySelectorAll("#dot");
+    let slides = document.querySelectorAll("#slides") as NodeListOf<HTMLElement>;
+    let dots = document.querySelectorAll("#dot") as NodeListOf<HTMLElement>;
     if (n > slides.length) {
       slideIndex = 1;
     }
@@ -52,7 +52,9 @@ import testimonials from "./testimonials";
     }
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
+      dots[i].style.backgroundColor = '#5E5E5E';
     };
     slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex -1]. style.backgroundColor = '#FFAE4D';
   }
 </script>

@@ -10,11 +10,13 @@ const {href, title} = Astro.props
 </div>
 
 <script>
-    const titles = document.querySelectorAll('a');
+    const titles = document.querySelectorAll('a');  
     const svgs = document.querySelectorAll('svg');
     for (let i = 0; i < 5; i++){     
         titles[i]?.addEventListener('mouseenter', () => svgs[i].classList.remove('hidden'));
         titles[i]?.addEventListener('mouseleave', () => svgs[i].classList.add('hidden'));
+        titles[i]?.addEventListener('focus', () => svgs[i].classList.remove('hidden'));
+        titles[i]?.addEventListener('blur', () => svgs[i].classList.add('hidden'));
     }
 </script>
 
