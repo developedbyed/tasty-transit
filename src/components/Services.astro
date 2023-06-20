@@ -2,7 +2,10 @@
 import ServicesCard from "./ServicesCard.astro";
 ---
 
-<div class="bg-services-black flex flex-col items-center p-6 md:p-24">
+<div
+    class="bg-services-black flex flex-col items-center p-6 md:p-24"
+    id="services"
+>
     <h1
         class="text-header font-bold text-white text-center md:text-left flex flex-col justify-center md:flex-row md:whitespace-nowrap gap-2 whitespace-normal"
     >
@@ -15,9 +18,12 @@ import ServicesCard from "./ServicesCard.astro";
                 height="18"
             >
                 <path
+                    id="orangeUnderline"
                     d="M197.308 10.2703C195.765 9.44784 194.504 8.2312 185.368 6.67874C182.243 6.1622 179.125 5.60297 175.998 5.10778C152.652 1.96871 150.62 2.08539 133.396 0.759181C124.169 0.19853 114.919 0.157264 105.68 0.000736445C99.1659 -0.0149171 92.6499 0.222721 86.1368 0.356479C51.0632 1.92886 63.268 1.09358 38.8304 3.29491C28.3006 4.74208 17.796 6.40553 7.27463 7.92526C5.70572 8.2682 4.11305 8.51864 2.56509 8.95265C0.852274 9.4393 0.788008 9.41938 0.54352 9.64706C-0.572744 10.4695 0.127191 12.5129 1.76177 12.1373C6.51043 10.7897 6.27153 10.9178 26.6381 7.91672C27.2333 8.55422 27.6566 8.39769 29.2115 8.35927C31.0543 8.31373 32.897 8.28385 34.7383 8.19989C42.2141 7.65774 49.6703 6.831 57.1419 6.21485C59.7139 6.02987 62.2831 5.77089 64.8551 5.54606C68.0977 5.38099 71.3417 5.22019 74.5857 5.06225C91.3898 4.75488 86.5252 4.61686 107.368 4.84595C110.64 4.98683 107.587 4.82034 124.932 5.8278C138.429 7.0914 153.002 9.80358 166.205 12.3905C171.914 13.5161 182.504 15.6918 188.042 17.6242C188.575 17.7736 189.199 17.5858 189.511 17.1148C189.954 16.5855 189.882 15.7345 189.402 15.2464C188.948 14.8025 188.264 14.7569 187.7 14.5236C185.201 13.6911 181.526 12.8032 178.805 12.1671L182.46 12.6339C185.676 13.0793 188.925 13.1917 192.147 13.5944C193.656 13.731 195.7 13.8519 196.944 12.9697C197.26 12.7506 197.623 12.5784 197.812 12.2198C198.198 11.5666 197.97 10.646 197.31 10.2732L197.308 10.2703ZM129.285 3.38314C134.544 3.58235 150.799 4.92706 156.758 5.50906C163.177 6.29312 169.595 7.07859 176.004 7.95514C179.392 8.6339 186.36 9.55029 190.215 10.5364C188.556 10.3728 186.894 10.2561 185.234 10.101C166.589 7.83846 147.96 5.40234 129.285 3.38314Z"
-                    fill="#FFAE4D"
-                    class="path">
+                    stroke="#FFAE4D"
+                    stroke-width="0.5"
+                    fill="transparent"
+                >
                 </path>
             </svg>
             <span class=""> business.</span>
@@ -38,10 +44,12 @@ import ServicesCard from "./ServicesCard.astro";
 </div>
 
 <style>
-    /* .path {
-        stroke-dasharray: 1000;
-        stroke-dashoffset: 1000;
-        animation: dash 5s forwards;
+    @media (prefers-reduced-motion: no-preference) {
+        .path {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation: dash 5s forwards;
+        }
     }
 
     @keyframes dash {
@@ -50,10 +58,11 @@ import ServicesCard from "./ServicesCard.astro";
         }
         to {
             stroke-dashoffset: 0;
+            fill: #ffae4d;
         }
-    } */
+    }
 
-@-webkit-keyframes fadein {
+    /* @-webkit-keyframes fadein {
     from { opacity: 0; }
     to { opacity: 1; }
 }
@@ -72,5 +81,23 @@ import ServicesCard from "./ServicesCard.astro";
     -webkit-animation: fadein 1s ease-in forwards;
     -moz-animation: fadein 1s ease-in forwards;
     animation: fadein 1s ease-in forwards;
-}
+} */
 </style>
+
+<script>
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            const path = entry.target.querySelector("#orangeUnderline");
+
+            if (entry.isIntersecting) {
+                path.classList.add("path");
+                return; // if we added the class, exit the function
+            }
+
+            // We're not intersecting, so remove the class!
+            path.classList.remove("path");
+        });
+    });
+
+    observer.observe(document.querySelector("#services"));
+</script>
