@@ -4,10 +4,10 @@ import ServicesCard from "./ServicesCard.astro";
 
 <div
     class="bg-services-black flex flex-col items-center p-6 md:p-24"
-    id="services"
 >
     <h1
         class="text-header font-bold text-white text-center md:text-left flex flex-col justify-center md:flex-row md:whitespace-nowrap gap-2 whitespace-normal"
+        id="services"
     >
         Let's boost your
         <div class="relative justify-self-center w-full">
@@ -48,7 +48,7 @@ import ServicesCard from "./ServicesCard.astro";
         .path {
             stroke-dasharray: 1000;
             stroke-dashoffset: 1000;
-            animation: dash 5s forwards;
+            animation: dash 3s forwards;
         }
     }
 
@@ -61,33 +61,12 @@ import ServicesCard from "./ServicesCard.astro";
             fill: #ffae4d;
         }
     }
-
-    /* @-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-.path {
-    -webkit-animation: fadein 1s ease-in forwards;
-    -moz-animation: fadein 1s ease-in forwards;
-    animation: fadein 1s ease-in forwards;
-} */
 </style>
 
 <script>
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
-            const path = entry.target.querySelector("#orangeUnderline");
+            const path = entry.target.querySelector("#orangeUnderline") as HTMLElement;
 
             if (entry.isIntersecting) {
                 path.classList.add("path");
@@ -99,5 +78,5 @@ import ServicesCard from "./ServicesCard.astro";
         });
     });
 
-    observer.observe(document.querySelector("#services"));
+    observer.observe(document.querySelector("#services")  as HTMLElement);
 </script>
