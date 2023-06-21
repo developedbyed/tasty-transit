@@ -1,29 +1,27 @@
 ---
 import logo from "/logo.svg";
 import NavItem from "./NavItem.astro";
-import Hamburger from "./Hamburger.astro";
+import Hamburger from "./Hamburger.jsx";
 ---
 
 <header
-    class="flex justify-between items-center px-4 md:px-32 pt-2 md:py-6 w-full sticky top-0 z-50 bg-white"
+    class="flex justify-between px-4 lg:px-32 py-2 lg:py-6 w-full sticky top-0 z-50 bg-white border-b-2 border-solid border-secondary-accent lg:border-none"
 >
-    <div class="w-1/3">
-        <img src={logo} alt="logo" />
+    <div class="w-1/3 flex items-start">
+        <img class="self-start justify-self-start" src={logo} alt="logo" />
     </div>
     <nav
-        class="flex gap-8 items-center text-sm lg:text-lg text-grey-text font-semibold"
+        class="flex gap-6 lg:gap-8 items-center text-sm lg:text-lg text-grey-text font-semibold"
     >
         <NavItem href="/" title="Home" />
         <NavItem href="/about" title="About" />
         <NavItem href="/services" title="Services" />
         <NavItem href="/testimonials" title="Testimonials" />
         <NavItem href="/blog" title="Blog" />
-        <Hamburger />
-        <!-- <button class="min-w-fit bg-black border-box hover:bg-secondary-accent focus:bg-secondary-accent transition ease-in-out delay-75 text-white px-4 py-2 rounded-lg hidden md:flex"> -->
+        <Hamburger client:load/>
         <a
             class="min-w-fit bg-black border-box hover:bg-secondary-accent focus:bg-secondary-accent transition ease-in-out delay-75 text-white px-4 py-2 rounded-lg hidden md:flex"
             href="/contact">Get in touch</a
         >
-        <!-- </button> -->
     </nav>
 </header>
