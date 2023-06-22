@@ -1,0 +1,60 @@
+---
+import CarouselButton from "./Carousel-button.astro";
+import CarouselItem from "./Carousel-item.astro";
+import testimonials from "./testimonials";
+---
+
+<div class="flex flex-col gap-6 px-4 lg:w-4/5 text-center">  
+  <ul>
+    <CarouselItem name={testimonials[0].name} message={testimonials[0].message}/>
+    <CarouselItem name={testimonials[1].name} message={testimonials[1].message}/>
+    <CarouselItem name={testimonials[2].name} message={testimonials[2].message}/>
+    <CarouselItem name={testimonials[3].name} message={testimonials[3].message}/>
+    <CarouselItem name={testimonials[4].name} message={testimonials[4].message}/>
+    <CarouselItem name={testimonials[5].name} message={testimonials[5].message}/>
+</ul>
+<ul class="flex justify-center gap-3">
+  <CarouselButton/>
+  <CarouselButton/>
+  <CarouselButton/>
+  <CarouselButton/>
+  <CarouselButton/>
+  <CarouselButton/>
+</ul>
+</div>
+<script>
+  const slides = document.querySelectorAll("#dot");
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i]?.addEventListener("click", () => currentSlide(i + 1));
+  }
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  // Next/previous controls
+  function plusSlides(n: number) {
+    showSlides((slideIndex += n));
+  }
+
+  function currentSlide(n: number) {
+    showSlides((slideIndex = n));
+  }
+
+  function showSlides(n: number) {
+    let i;
+    let slides = document.querySelectorAll("#slides") as NodeListOf<HTMLElement>;
+    let dots = document.querySelectorAll("#dot") as NodeListOf<HTMLElement>;
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+      dots[i].style.backgroundColor = '#5E5E5E';
+    };
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex -1]. style.backgroundColor = '#FFAE4D';
+  }
+</script>

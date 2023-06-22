@@ -1,0 +1,40 @@
+---
+const {title, price} = Astro.props;
+---
+
+<div
+    class="bg-white max-w-md max-h-lg rounded-xl flex items-center flex-col px-12 py-14 md:my-12 hover:border-3 hover:border-solid hover:border-secondary-accent"
+>
+    <h1 class="text-grey-text text-lg font-bold">{title}</h1>
+    <p class="text-cardPrice font-semibold mb-10">
+        £{price} <span class="text-xxxs font-semibold">/session</span>
+    </p>
+    <ul class="text-base text-grey-text max-w-md space-y-3 list-inside mb-8">
+        <li class="flex gap-2 items-start">
+            <img class="pt-1" src="/CheckMark.svg" alt="" />
+            Aims to unlock client's full potential and guide them to be their best
+            selves
+        </li>
+        <li class="flex gap-2 items-start">
+            <img class="pt-1" src="/CheckMark.svg" alt="" />
+            Assists clients facing new challenges, roles, or career directions
+        </li>
+        <li class="flex gap-2 items-start">
+            <img class="pt-1" src="/CheckMark.svg" alt="" />
+            Uses principles from sports coaching for accountability and goal-setting
+        </li>
+        <li class="flex gap-2 items-start">
+            <img class="pt-1" src="/CheckMark.svg" alt="" />
+            Focuses on increasing self-awareness, achieving clarity of choice, and
+            success
+        </li>
+        <li class="flex gap-2 items-start">
+            <img class="pt-1" src="/CheckMark.svg" alt="" />
+            Offers free initial 30-minute consultation
+        </li>
+    </ul>
+    <a href='#'
+        class="min-w-fit w-full bg-services-black hover:bg-secondary-accent focus:bg-secondary-accent text-white px-4 py-2 rounded-md text-center transition ease-in-out delay-100"
+        >Learn More</a
+    >
+</div>
