@@ -1,153 +1,131 @@
 ---
 import MainLayouts from "../layouts/MainLayouts.astro";
 import karenAbout from "/karen-about.jpg";
-import graphic from "/public/graphic.jpg";
 import karenGuiding from "/karen-guiding.jpg";
+import SiteLayout from "../layout/SiteLayout.astro";
 ---
 
-<MainLayouts title="About">
-    <div
-        class="flex flex-col items-center justify-center md:max-w-screen-2xl  mx-auto"
-    >
-        <section
-            class="flex md:text-left text-center flex-col md:flex-row md:gap-28 my-5"
+<SiteLayout>
+    <MainLayouts title="About">
+        <div
+            class="flex flex-col items-center justify-center md:max-w-screen-2xl mx-auto"
         >
-            <img
-                src={karenAbout}
-                alt="Karen"
-                class="md:w-3/5 object-cover md:m-0 m-7 md:rounded-sm rounded-md md:mb-0 md:ml-0"
-            />
-            <div class="relative">
-                <h1
-                    class="font-poppins md:text-5xl p-6 text-2xl font-bold text-[#1D1D1D] leading-11 py-3"
-                >
-                    Unlock Success with<br /> proven
-                    <div class="relative inline-block">
-                        <span>Leadership coaching.</span>
-                        <svg
-                            class="absolute bottom-0 left-0 -z-10 md:-mb-3"
-                            viewBox="0 0 247 8"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                d="M0 0H123.5H247V15H166.49H0V0Z"
-                                fill="url(#paint0_linear_131_64)"></path>
-                            <defs>
-                                <linearGradient
-                                    id="paint0_linear_131_64"
-                                    x1="0"
-                                    y1="7.5"
-                                    x2="247"
-                                    y2="7.5"
-                                    gradientUnits="userSpaceOnUse"
-                                >
-                                    <stop stop-color="#FFAE4D">
-                                        <animate
-                                            attributeName="stop-color"
-                                            values="#FFAE4D; #FFDF93; #FFAE4D"
-                                            dur="3s"
-                                            repeatCount="indefinite"></animate>
-                                    </stop>
-                                    <stop offset="1" stop-color="#FFDF93">
-                                        <animate
-                                            attributeName="stop-color"
-                                            values="#FFDF93; #FFAE4D; #FFDF93"
-                                            dur="3s"
-                                            repeatCount="indefinite"></animate>
-                                    </stop>
-                                </linearGradient>
-                            </defs>
-                        </svg>
-                    </div>
-                </h1>
-
-                <div class="flex flex-col">
-                    <p
-                        class="text-xl font-poppins p-6 py-7 font-medium leading-8 text-[#5E5E5E] md:text-left md:pr-10"
-                    >
-                        I am a transformational leadership, business and
-                        positive attitude coach, with a successful and proven
-                        track record. I have worked with numerous clients from
-                        many different backgrounds and business sectors,
-                        enabling lasting positive change for my clients.
-                    </p>
-
-                    <p
-                        class="font-poppins md:text-left p-6 py-7 text-xl font-medium leading-8 text-[#5E5E5E] md:pr-10"
-                    >
-                        I hold a Master's Degree in Leadership and Management
-                        from Robert Gordon University and a postgraduate
-                        certificate in Coaching, from the University of
-                        Aberdeen. I am also an accredited coach of the <span
-                            class="text-[#7D2E89]">Sue Stone Foundation.</span
-                        >
-                    </p>
-
-                    <p
-                        class="font-poppins md:text-left py-7 p-6 text-xl font-medium leading-8 text-[#5E5E5E] md:pr-10"
-                    >
-                        My career has been interesting and varied over the last
-                        25 years. Having first qualifying as a Management
-                        Accountant, I very quickly moved into leadership and
-                        management where I realized people development was my
-                        passion. I have held various Director roles in the
-                        corporate world, my last being the CEO of a Scottish
-                        based company for 7 years. I live in Aberdeen and work
-                        all over Scotland and the UK. I have international
-                        clients whom I meet on SKYPE, so distance is not a
-                        barrier!
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section
-            class="text-center md:text-left flex flex-col md:flex-row gap-16 md:mt-28 mt-10"
-        >
-            <div
-                class="bg-[#F7A746] font-poppins text-2xl md:text-5xl font-extrabold text-white relative h-96 md:w-1/2 md:h-auto md:order-1"
+            <section
+                class="flex md:text-left text-center flex-col md:flex-row md:gap-28 my-5"
             >
-                <div class="absolute text-left top-10 md:top-14 left-14">
-                    EXPLORE <br /> POSIBILITIES.
-                </div>
-                <div class="absolute top-12 right-16 h-32 w-32 md:top-20 md:right-24 md:h-60 md:w-60">
-                    <svg
-                        viewBox="0 0 390 308"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
+                <img
+                    src={karenAbout}
+                    alt="Karen"
+                    class="md:w-3/5 object-cover md:m-0 m-7 md:rounded-sm rounded-md md:mb-0 md:ml-0"
+                />
+                <div class="relative">
+                    <h1
+                        class="font-poppins md:text-5xl p-6 text-2xl font-bold text-[#1D1D1D] leading-11 py-3"
                     >
-                        <path
-                            d="M0.999971 9.74061C262.837 32.3382 335.489 105.678 380.943 305.365"
-                            stroke="white"
-                            stroke-width="18"
-                            stroke-dasharray="80 40"
-                            stroke-dasharray="700"
-                            stroke-dashoffset="700"
-                        >
-                            <animate
-                                attributeType="XML"
-                                attributeName="stroke-dashoffset"
-                                from="700"
-                                to="0"
-                                dur="5s"
-                                repeatCount="indefinite">
-                            </animate>
-                        </path>
-                    </svg>
-                </div>
-                <div class="absolute text-right top-40 md:top-72 right-14">
-                    GET <br /> CLARITY.
+                        Unlock Success with<br /> proven
+                        <div class="relative inline-block">
+                            <span>Leadership coaching.</span>
+                            <svg
+                                class="absolute bottom-0 left-0 -z-10 md:-mb-3"
+                                viewBox="0 0 247 8"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M0 0H123.5H247V15H166.49H0V0Z"
+                                    fill="url(#paint0_linear_131_64)"></path>
+                                <defs>
+                                    <linearGradient
+                                        id="paint0_linear_131_64"
+                                        x1="0"
+                                        y1="7.5"
+                                        x2="247"
+                                        y2="7.5"
+                                        gradientUnits="userSpaceOnUse"
+                                    >
+                                        <stop stop-color="#FFAE4D">
+                                            <animate
+                                                attributeName="stop-color"
+                                                values="#FFAE4D; #FFDF93; #FFAE4D"
+                                                dur="3s"
+                                                repeatCount="indefinite"
+                                            ></animate>
+                                        </stop>
+                                        <stop offset="1" stop-color="#FFDF93">
+                                            <animate
+                                                attributeName="stop-color"
+                                                values="#FFDF93; #FFAE4D; #FFDF93"
+                                                dur="3s"
+                                                repeatCount="indefinite"
+                                            ></animate>
+                                        </stop>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </h1>
 
-                    <div class="absolute top-12 right-32 h-28 w-28 md:top-12 md:right-60 md:h-48 md:w-52">
+                    <div class="flex flex-col">
+                        <p
+                            class="text-xl font-poppins p-6 py-7 font-medium leading-8 text-[#5E5E5E] md:text-left md:pr-10"
+                        >
+                            I am a transformational leadership, business and
+                            positive attitude coach, with a successful and
+                            proven track record. I have worked with numerous
+                            clients from many different backgrounds and business
+                            sectors, enabling lasting positive change for my
+                            clients.
+                        </p>
+
+                        <p
+                            class="font-poppins md:text-left p-6 py-7 text-xl font-medium leading-8 text-[#5E5E5E] md:pr-10"
+                        >
+                            I hold a Master's Degree in Leadership and
+                            Management from Robert Gordon University and a
+                            postgraduate certificate in Coaching, from the
+                            University of Aberdeen. I am also an accredited
+                            coach of the <span class="text-[#7D2E89]"
+                                >Sue Stone Foundation.</span
+                            >
+                        </p>
+
+                        <p
+                            class="font-poppins md:text-left py-7 p-6 text-xl font-medium leading-8 text-[#5E5E5E] md:pr-10"
+                        >
+                            My career has been interesting and varied over the
+                            last 25 years. Having first qualifying as a
+                            Management Accountant, I very quickly moved into
+                            leadership and management where I realized people
+                            development was my passion. I have held various
+                            Director roles in the corporate world, my last being
+                            the CEO of a Scottish based company for 7 years. I
+                            live in Aberdeen and work all over Scotland and the
+                            UK. I have international clients whom I meet on
+                            SKYPE, so distance is not a barrier!
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                class="text-center md:text-left flex flex-col md:flex-row gap-16 md:mt-28 mt-10"
+            >
+                <div
+                    class="bg-[#F7A746] font-poppins text-2xl md:text-5xl font-extrabold text-white relative h-96 md:w-1/2 md:h-auto md:order-1"
+                >
+                    <div class="absolute text-left top-10 md:top-14 left-14">
+                        EXPLORE <br /> POSIBILITIES.
+                    </div>
+                    <div
+                        class="absolute top-12 right-16 h-32 w-32 md:top-20 md:right-24 md:h-60 md:w-60"
+                    >
                         <svg
-                            viewBox="0 0 309 269"
+                            viewBox="0 0 390 308"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
-                            class=" rotate-6"
                         >
                             <path
-                                d="M307.831 9.49794C80.9977 23.7757 25.9326 88.3935 9.54004 267.917"
+                                d="M0.999971 9.74061C262.837 32.3382 335.489 105.678 380.943 305.365"
                                 stroke="white"
                                 stroke-width="18"
                                 stroke-dasharray="80 40"
@@ -160,182 +138,221 @@ import karenGuiding from "/karen-guiding.jpg";
                                     from="700"
                                     to="0"
                                     dur="5s"
-                                    repeatCount="indefinite">
+                                    repeatCount="indefinite"
+                                >
                                 </animate>
                             </path>
                         </svg>
                     </div>
-                </div>
-                <div class="absolute bottom-10 md:bottom-14 left-14">
-                    TAKE ACTION!
-                </div>
-            </div>
+                    <div class="absolute text-right top-40 md:top-72 right-14">
+                        GET <br /> CLARITY.
 
-            <div class="md:w-1/2">
-                <div class="relative inline-block">
-                    <div class="relative inline-block md:px-10 md:my-12">
-                        <h1
-                            class="text-2xl md:m-auto font-poppins md:text-5xl font-bold text-[#1D1D1D]"
+                        <div
+                            class="absolute top-12 right-32 h-28 w-28 md:top-12 md:right-60 md:h-48 md:w-52"
                         >
-                            My Approach
-                        </h1>
-                        <svg
-                            class="absolute md:w-80 bottom-0 -z-10 md:-mb-3"
-                            viewBox="0 0 247 12"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                d="M0 0H123.5H247V15H166.49H0V0Z"
-                                fill="url(#paint0_linear_131_64)"></path>
-                            <defs>
-                                <linearGradient
-                                    id="paint0_linear_131_64"
-                                    x1="0"
-                                    y1="7.5"
-                                    x2="247"
-                                    y2="7.5"
-                                    gradientUnits="userSpaceOnUse"
+                            <svg
+                                viewBox="0 0 309 269"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="rotate-6"
+                            >
+                                <path
+                                    d="M307.831 9.49794C80.9977 23.7757 25.9326 88.3935 9.54004 267.917"
+                                    stroke="white"
+                                    stroke-width="18"
+                                    stroke-dasharray="80 40"
+                                    stroke-dasharray="700"
+                                    stroke-dashoffset="700"
                                 >
-                                    <stop stop-color="#FFAE4D">
-                                        <animate
-                                            attributeName="stop-color"
-                                            values="#FFAE4D; #FFDF93; #FFAE4D"
-                                            dur="3s"
-                                            repeatCount="indefinite"></animate>
-                                    </stop>
-                                    <stop offset="1" stop-color="#FFDF93">
-                                        <animate
-                                            attributeName="stop-color"
-                                            values="#FFDF93; #FFAE4D; #FFDF93"
-                                            dur="3s"
-                                            repeatCount="indefinite"></animate>
-                                    </stop>
-                                </linearGradient>
-                            </defs>
-                        </svg>
+                                    <animate
+                                        attributeType="XML"
+                                        attributeName="stroke-dashoffset"
+                                        from="700"
+                                        to="0"
+                                        dur="5s"
+                                        repeatCount="indefinite"
+                                    >
+                                    </animate>
+                                </path>
+                            </svg>
+                        </div>
                     </div>
-                    <div class="md:-mt-5">
-                        <p
-                            class="font-poppins text-xl font-medium md:px-10 py-7 p-6 leading-8 text-[#5E5E5E] md:text-left"
-                        >
-                            We will start with an informal consultation call.
-                            This is for us to get to know each other, for you to
-                            share your expectations and desired outcomes, and
-                            for me to determine how I can support you
-                            proactively.
-                        </p>
-                        <p
-                            class="font-poppins text-xl font-medium py-7 md:px-10 p-6 leading-8 text-[#5E5E5E] md:text-left"
-                        >
-                            You will benefit from my many years of practical
-                            experience, my coaching experience, and my
-                            dedication to life-long learning. I regularly invest
-                            in my own development to ensure my approach remains
-                            robust and relevant.
-                        </p>
-                        <p
-                            class="font-poppins text-xl font-medium py-7 md:px-10 p-6 leading-8 text-[#5E5E5E] md:text-left"
-                        >
-                            Sessions are held in person in a private and
-                            comfortable environment or alternatively via video
-                            call. If required, extra support is available by
-                            phone and email.
-                        </p>
+                    <div class="absolute bottom-10 md:bottom-14 left-14">
+                        TAKE ACTION!
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section
-            class="flex text-center md:text-left flex-col md:flex-row md:gap-16 md:mt-28"
-        >
-            <img
-                src={karenGuiding}
-                class="md:w-1/2 md:pt-12 md:pr-12 object-cover md:mb-10 m-7 md:m-0 md:rounded-sm rounded-md"
-            />
-
-            <div class="flex md:my-14 md:pt-16 flex-col relative md:pb-20">
-                <h1
-                    class="font-poppins text-2xl md:text-5xl font-bold text-[#1D1D1D] p-6 md:pr-10"
-                >
-                    My Guiding
+                <div class="md:w-1/2">
                     <div class="relative inline-block">
-                        <span> Principles</span>
-                        <svg
-                            class="absolute bottom-0 -z-10 md:-mb-3"
-                            viewBox="0 0 247 15"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                d="M0 0H123.5H247V15H166.49H0V0Z"
-                                fill="url(#paint0_linear_131_64)"></path>
-                            <defs>
-                                <linearGradient
-                                    id="paint0_linear_131_64"
-                                    x1="0"
-                                    y1="7.5"
-                                    x2="247"
-                                    y2="7.5"
-                                    gradientUnits="userSpaceOnUse"
-                                >
-                                    <stop stop-color="#FFAE4D">
-                                        <animate
-                                            attributeName="stop-color"
-                                            values="#FFAE4D; #FFDF93; #FFAE4D"
-                                            dur="3s"
-                                            repeatCount="indefinite"></animate>
-                                    </stop>
-                                    <stop offset="1" stop-color="#FFDF93">
-                                        <animate
-                                            attributeName="stop-color"
-                                            values="#FFDF93; #FFAE4D; #FFDF93"
-                                            dur="3s"
-                                            repeatCount="indefinite"></animate>
-                                    </stop>
-                                </linearGradient>
-                            </defs>
-                        </svg>
+                        <div class="relative inline-block md:px-10 md:my-12">
+                            <h1
+                                class="text-2xl md:m-auto font-poppins md:text-5xl font-bold text-[#1D1D1D]"
+                            >
+                                My Approach
+                            </h1>
+                            <svg
+                                class="absolute md:w-80 bottom-0 -z-10 md:-mb-3"
+                                viewBox="0 0 247 12"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M0 0H123.5H247V15H166.49H0V0Z"
+                                    fill="url(#paint0_linear_131_64)"></path>
+                                <defs>
+                                    <linearGradient
+                                        id="paint0_linear_131_64"
+                                        x1="0"
+                                        y1="7.5"
+                                        x2="247"
+                                        y2="7.5"
+                                        gradientUnits="userSpaceOnUse"
+                                    >
+                                        <stop stop-color="#FFAE4D">
+                                            <animate
+                                                attributeName="stop-color"
+                                                values="#FFAE4D; #FFDF93; #FFAE4D"
+                                                dur="3s"
+                                                repeatCount="indefinite"
+                                            ></animate>
+                                        </stop>
+                                        <stop offset="1" stop-color="#FFDF93">
+                                            <animate
+                                                attributeName="stop-color"
+                                                values="#FFDF93; #FFAE4D; #FFDF93"
+                                                dur="3s"
+                                                repeatCount="indefinite"
+                                            ></animate>
+                                        </stop>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="md:-mt-5">
+                            <p
+                                class="font-poppins text-xl font-medium md:px-10 py-7 p-6 leading-8 text-[#5E5E5E] md:text-left"
+                            >
+                                We will start with an informal consultation
+                                call. This is for us to get to know each other,
+                                for you to share your expectations and desired
+                                outcomes, and for me to determine how I can
+                                support you proactively.
+                            </p>
+                            <p
+                                class="font-poppins text-xl font-medium py-7 md:px-10 p-6 leading-8 text-[#5E5E5E] md:text-left"
+                            >
+                                You will benefit from my many years of practical
+                                experience, my coaching experience, and my
+                                dedication to life-long learning. I regularly
+                                invest in my own development to ensure my
+                                approach remains robust and relevant.
+                            </p>
+                            <p
+                                class="font-poppins text-xl font-medium py-7 md:px-10 p-6 leading-8 text-[#5E5E5E] md:text-left"
+                            >
+                                Sessions are held in person in a private and
+                                comfortable environment or alternatively via
+                                video call. If required, extra support is
+                                available by phone and email.
+                            </p>
+                        </div>
                     </div>
-                </h1>
-                <div class="md:-mt-2 -mt-6">
-                    <p
-                        class="md:pr-10 p-6 font-poppins text-xl md:text-left font-medium py-7 leading-8 text-[#5E5E5E]"
-                    >
-                        I'm here to help you become your best self through
-                        positive, non-judgmental guidance, helping you clarify
-                        your motivations and goals. As my client, I see you as a
-                        talented, capable individual ready to achieve all your
-                        life's ambitions.
-                    </p>
-                    <p
-                        class="md:pr-10 p-6 font-poppins text-xl font-medium md:text-left py-7 leading-8 text-[#5E5E5E]"
-                    >
-                        My coaching approach is comprehensive, acknowledging
-                        that we're shaped by our experiences. I use your past to
-                        understand your present and future. I provide
-                        structured, unbiased coaching, helping you explore your
-                        strengths and weaknesses and overcome self-limiting
-                        beliefs.
-                    </p>
-                    <p
-                        class="md:pr-10 p-6 font-poppins text-xl font-medium py-7 md:text-left leading-8 text-[#5E5E5E] md:mb-10"
-                    >
-                        As a team, we respect your personal values, focusing on
-                        solutions to your current challenges using your past
-                        experiences and values. We'll work collaboratively to
-                        create enduring change. Your motivation and engagement
-                        can lead us to exceptional results. Together, we'll
-                        achieve remarkable outcomes.
-                    </p>
-                    <button
-                        class="bg-[#1D1D1D] md:w-52 p-4 font-medium md:text-xl rounded-lg text-white md:absolute md:right-0 md:bottom-0 mb-10 mx-auto md:m-12"
-                    >
-                        <a href="/">Get in touch</a>
-                    </button>
                 </div>
-            </div>
-        </section>
-    </div>
-</MainLayouts>
+            </section>
+
+            <section
+                class="flex text-center md:text-left flex-col md:flex-row md:gap-16 md:mt-28"
+            >
+                <img
+                    src={karenGuiding}
+                    class="md:w-1/2 md:pt-12 md:pr-12 object-cover md:mb-10 m-7 md:m-0 md:rounded-sm rounded-md"
+                />
+
+                <div class="flex md:my-14 md:pt-16 flex-col relative md:pb-20">
+                    <h1
+                        class="font-poppins text-2xl md:text-5xl font-bold text-[#1D1D1D] p-6 md:pr-10"
+                    >
+                        My Guiding
+                        <div class="relative inline-block">
+                            <span> Principles</span>
+                            <svg
+                                class="absolute bottom-0 -z-10 md:-mb-3"
+                                viewBox="0 0 247 15"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M0 0H123.5H247V15H166.49H0V0Z"
+                                    fill="url(#paint0_linear_131_64)"></path>
+                                <defs>
+                                    <linearGradient
+                                        id="paint0_linear_131_64"
+                                        x1="0"
+                                        y1="7.5"
+                                        x2="247"
+                                        y2="7.5"
+                                        gradientUnits="userSpaceOnUse"
+                                    >
+                                        <stop stop-color="#FFAE4D">
+                                            <animate
+                                                attributeName="stop-color"
+                                                values="#FFAE4D; #FFDF93; #FFAE4D"
+                                                dur="3s"
+                                                repeatCount="indefinite"
+                                            ></animate>
+                                        </stop>
+                                        <stop offset="1" stop-color="#FFDF93">
+                                            <animate
+                                                attributeName="stop-color"
+                                                values="#FFDF93; #FFAE4D; #FFDF93"
+                                                dur="3s"
+                                                repeatCount="indefinite"
+                                            ></animate>
+                                        </stop>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </h1>
+                    <div class="md:-mt-2 -mt-6">
+                        <p
+                            class="md:pr-10 p-6 font-poppins text-xl md:text-left font-medium py-7 leading-8 text-[#5E5E5E]"
+                        >
+                            I'm here to help you become your best self through
+                            positive, non-judgmental guidance, helping you
+                            clarify your motivations and goals. As my client, I
+                            see you as a talented, capable individual ready to
+                            achieve all your life's ambitions.
+                        </p>
+                        <p
+                            class="md:pr-10 p-6 font-poppins text-xl font-medium md:text-left py-7 leading-8 text-[#5E5E5E]"
+                        >
+                            My coaching approach is comprehensive, acknowledging
+                            that we're shaped by our experiences. I use your
+                            past to understand your present and future. I
+                            provide structured, unbiased coaching, helping you
+                            explore your strengths and weaknesses and overcome
+                            self-limiting beliefs.
+                        </p>
+                        <p
+                            class="md:pr-10 p-6 font-poppins text-xl font-medium py-7 md:text-left leading-8 text-[#5E5E5E] md:mb-10"
+                        >
+                            As a team, we respect your personal values, focusing
+                            on solutions to your current challenges using your
+                            past experiences and values. We'll work
+                            collaboratively to create enduring change. Your
+                            motivation and engagement can lead us to exceptional
+                            results. Together, we'll achieve remarkable
+                            outcomes.
+                        </p>
+                        <button
+                            class="bg-[#1D1D1D] md:w-52 p-4 font-medium md:text-xl rounded-lg text-white md:absolute md:right-0 md:bottom-0 mb-10 mx-auto md:m-12"
+                        >
+                            <a href="/">Get in touch</a>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </MainLayouts>
+</SiteLayout>

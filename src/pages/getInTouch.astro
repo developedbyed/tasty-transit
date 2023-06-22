@@ -6,46 +6,57 @@ import locationIcon from "../locationIcon.svg";
 ---
 
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-
-
-<div
-  class="min-h-screen w-screen flex flex-col items-center justify-center md:h-screen md:flex-row md:space-x-20 "
->
-  <div
-    class="flex flex-col sm:flex-row md:flex-col w-11/12 space-y-5 sm:space-y-0 sm:space-x-5 md:space-x-0  md:w-5/12 lg:w-4/12 md:px-20 text-custom-gray text-lg md:space-y-16 md:border-r-4 border-purple"
-  >
-    <div class="flex items-start space-x-5 text-left sm:w-1/3 md:w-auto">
-      <img src={phoneIcon} alt="phone" />
-      <div class="flex flex-col space-y-1">
-        <h1 class="font-semibold text-lg md:text-2xl text-black_background">Telephone</h1>
-        <p class="font-medium text-base md:text-lg whitespace-nowrap">07831 443448</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      class="min-h-screen w-screen flex flex-col items-center justify-center md:h-screen md:flex-row md:space-x-20"
+    >
+      <div
+        class="flex flex-col sm:flex-row md:flex-col w-11/12 space-y-5 sm:space-y-0 sm:space-x-5 md:space-x-0 md:w-5/12 lg:w-4/12 md:px-20 text-custom-gray text-lg md:space-y-16 md:border-r-4 border-purple"
+      >
+        <div class="flex items-start space-x-5 text-left sm:w-1/3 md:w-auto">
+          <img src={phoneIcon} alt="phone" />
+          <div class="flex flex-col space-y-1">
+            <h1 class="font-semibold text-lg md:text-2xl text-black_background">
+              Telephone
+            </h1>
+            <p class="font-medium text-base md:text-lg whitespace-nowrap">
+              07831 443448
+            </p>
+          </div>
+        </div>
+        <div class="flex items-start space-x-5 text-left sm:w-1/3 md:w-auto">
+          <img src={emailIcon} alt="email" />
+          <div class="flex flex-col space-y-1">
+            <h1 class="font-semibold text-lg md:text-2xl text-black_background">
+              Email
+            </h1>
+            <p class="font-medium text-base md:text-lg md:whitespace-nowrap">
+              info@ka-thecoach.co.uk
+            </p>
+          </div>
+        </div>
+        <div class="flex items-start space-x-5 text-left sm:w-1/3 md:w-auto">
+          <img src={locationIcon} alt="location" />
+          <div class="flex flex-col space-y-1">
+            <h1 class="font-semibold text-lg md:text-2xl text-black_background">
+              Location
+            </h1>
+            <p class="font-medium text-base md:text-lg">
+              4 North Ythsie <br class="hidden md:block" />By Tarves Ellon <br
+                class="hidden sm:block"
+              />Aberdeenshire <br class="hidden md:block" /><span
+                class="whitespace-nowrap">AB41 4LS</span
+              >
+            </p>
+          </div>
+        </div>
       </div>
+      <ContactForm />
     </div>
-    <div class="flex items-start space-x-5 text-left sm:w-1/3 md:w-auto">
-      <img src={emailIcon} alt="email" />
-      <div class="flex flex-col space-y-1">
-        <h1 class="font-semibold text-lg md:text-2xl text-black_background">Email</h1>
-        <p class="font-medium text-base md:text-lg md:whitespace-nowrap">info@ka-thecoach.co.uk</p>
-      </div>
-    </div>
-    <div class="flex items-start space-x-5 text-left sm:w-1/3 md:w-auto">
-      <img src={locationIcon} alt="location" />
-      <div class="flex flex-col space-y-1">
-        <h1 class="font-semibold text-lg md:text-2xl text-black_background">Location</h1>
-        <p class="font-medium text-base md:text-lg">
-          4 North Ythsie <br class="hidden md:block"/>By Tarves Ellon <br class="hidden sm:block"/>Aberdeenshire <br class="hidden md:block"/><span class="whitespace-nowrap">AB41 4LS</span>
-        </p>
-      </div>
-    </div>
-  </div>
-  <ContactForm />
-</div>
-
-</body>
+  </body>
 </html>
