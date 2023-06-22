@@ -1,0 +1,29 @@
+---
+export interface Props {
+    srollTo:string;
+    text:string;
+}
+const {srollTo, text} = Astro.props;
+---
+<a
+href={srollTo}
+class="flex flex-col justify-center items-center text-xs text-custom-gray space-y-2 pb-5">
+<p>{text}</p>
+<svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M23.6471 11.6473C23.6471 18.0815 18.434 23.2946 11.9998 23.2946C5.56564 23.2946 0.352539 18.0815 0.352539 11.6473C0.352539 5.2131 5.56564 0 11.9998 0C18.434 0 23.6471 5.2131 23.6471 11.6473ZM9.93336 6.19936V11.6473H6.60356C6.10103 11.6473 5.84742 12.2578 6.20436 12.6101L11.6006 17.9781C11.8214 18.1989 12.1736 18.1989 12.3943 17.9781L17.7906 12.6101C18.1475 12.2531 17.8939 11.6473 17.3914 11.6473H14.0663V6.19936C14.0663 5.88939 13.8127 5.63578 13.5027 5.63578H10.4969C10.187 5.63578 9.93336 5.88939 9.93336 6.19936Z"
+    fill="#FFAE4D"></path>
+</svg>
+</a>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>

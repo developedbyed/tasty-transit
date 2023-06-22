@@ -19,6 +19,16 @@ module.exports = {
         "orange-grad-end": "#FFDF93",
         "service-paragraph": "#E0E0E0",
         "services-black": "#1E1E1E",
+        'custom-gray': '#5E5E5E',
+				'yellowz':'#F7A746',
+				'yellowzGradient':'#FFDF93',
+				'purple':'#7D2389',
+				'black_background': '#1D1D1D',
+				'orange_ish': '#FFAE4D',
+				'purple_gradient_start': '#7D2E89',
+				'purple_gradient_finish': '#CA52DD',
+				'orange_gradient_start': '#FFAE4D',
+				'orange_gradient_finish': '#FFDF93',
       },
       fontSize: {
         xxxs: "0.5rem",
@@ -43,3 +53,4 @@ module.exports = {
   },
   plugins: [],
 };
+
