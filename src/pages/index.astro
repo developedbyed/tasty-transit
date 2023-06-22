@@ -1,6 +1,13 @@
 ---
-import MainLayouts from "../layouts/MainLayouts.astro";
+import SiteLayout from "../layout/SiteLayout.astro";
+import Hero from "../components/Hero.astro";
+import Services from "../components/Services.astro";
+import TestimonalsHome from "../components/TestimonalsHome.astro";
 ---
-<MainLayouts title="Home"  >
-    <p>Hi from Home</p>
-</MainLayouts>
+
+<SiteLayout>
+	<Hero />
+	<Services />
+	<TestimonalsHome />
+</SiteLayout>
+
