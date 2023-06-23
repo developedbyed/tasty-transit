@@ -3,17 +3,12 @@ import ContactForm from "../layouts/ContactForm.astro";
 import phoneIcon from "../phoneIcon.svg";
 import emailIcon from "../emailIcon.svg";
 import locationIcon from "../locationIcon.svg";
+import SiteLayout from '../layout/SiteLayout.astro';
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
+<SiteLayout id="contact-page">
     <div
-      class="min-h-screen w-screen flex flex-col items-center justify-center md:h-screen md:flex-row md:space-x-20"
+      class="flex flex-col items-center justify-center md:flex-row md:space-x-20 md:h-full py-4"
     >
       <div
         class="flex flex-col sm:flex-row md:flex-col w-11/12 space-y-5 sm:space-y-0 sm:space-x-5 md:space-x-0 md:w-5/12 lg:w-4/12 md:px-20 text-custom-gray text-lg md:space-y-16 md:border-r-4 border-purple"
@@ -58,5 +53,10 @@ import locationIcon from "../locationIcon.svg";
       </div>
       <ContactForm />
     </div>
-  </body>
-</html>
+</SiteLayout>
+
+<style>
+  #contact-page {
+  height: 100vh !important;
+  }
+</style>

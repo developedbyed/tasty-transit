@@ -23,7 +23,7 @@ const Hamburger = () => {
         <HamburgerItem href="/services" title="Services" />
         <HamburgerItem href="/testimonials" title="Testimonials" />
         <HamburgerItem href="/blog" title="Blog" />
-        <a href="/contact">Get In Touch</a>
+        <a href="/getInTouch">Get In Touch</a>
     </div>
     }
 </div>

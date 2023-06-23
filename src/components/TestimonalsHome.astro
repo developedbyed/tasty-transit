@@ -2,38 +2,49 @@
 import TestimonialCarousel from "./TestimonialCarousel.astro";
 ---
 
-<div class="flex flex-col items-center mb-10 lg:mb-32">
+<div id="testimonials" class="flex flex-col items-center mb-10 lg:mb-32">
     <div class="h-4 w-full bg-primary-accent"></div>
     <h2 class="text-grey-text text-2xl font-bold mt-10 lg:mt-24">
         Testimonials from
     </h2>
-    <div class="relative mb-4 lg:mb-0">
+    <div class="relative">
         <svg
-            class="absolute -bottom-1 -left-3"
-            width="247"
-            height="15"
-            viewBox="0 0 247 15"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-        >
-            <path
-                d="M0 0H247V15H166.49H0V0Z"
-                fill="url(#paint0_linear_2_487)"
-                class="path"></path>
-            <defs>
-                <linearGradient
-                    id="paint0_linear_2_487"
-                    x1="0"
-                    y1="7.5"
-                    x2="247"
-                    y2="7.5"
-                    gradientUnits="userSpaceOnUse"
-                >
-                    <stop stop-color="#FFAE4D"></stop>
-                    <stop offset="1" stop-color="#FFDF93"></stop>
-                </linearGradient>
-            </defs>
-        </svg>
+        class="absolute bottom-0 left-0 -z-10 -mb-1"
+        viewBox="0 0 247 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            d="M0 0H123.5H247V15H166.49H0V0Z"
+            fill="url(#paint0_linear_131_64)"></path>
+        <defs>
+            <linearGradient
+                id="paint0_linear_131_64"
+                x1="0"
+                y1="7.5"
+                x2="247"
+                y2="7.5"
+                gradientUnits="userSpaceOnUse"
+            >
+                <stop stop-color="#FFAE4D">
+                    <animate
+                        attributeName="stop-color"
+                        values="#FFAE4D; #FFDF93; #FFAE4D"
+                        dur="3s"
+                        repeatCount="indefinite"
+                    ></animate>
+                </stop>
+                <stop offset="1" stop-color="#FFDF93">
+                    <animate
+                        attributeName="stop-color"
+                        values="#FFDF93; #FFAE4D; #FFDF93"
+                        dur="3s"
+                        repeatCount="indefinite"
+                    ></animate>
+                </stop>
+            </linearGradient>
+        </defs>
+    </svg>
         <p class="text-header font-bold">my clients.</p>
     </div>
     <div
@@ -48,42 +59,3 @@ import TestimonialCarousel from "./TestimonialCarousel.astro";
     </div>
 </div>
 
-<style>
-    @keyframes slide {
-        10% {
-            transform: translateX(-180px);
-        }
-        20% {
-            transform: translateX(-160px);
-        }
-        30% {
-            transform: translateX(-140px);
-        }
-        40% {
-            transform: translateX(-120px);
-        }
-        50% {
-            transform: translateX(-100px);
-        }
-        60% {
-            transform: translateX(-80px);
-        }
-        70% {
-            transform: translateX(-60px);
-        }
-        80% {
-            transform: translateX(-40px);
-        }
-        90% {
-            transform: translateX(-20px);
-        }
-        100% {
-            transform: translateX(0px);
-        }
-    }
-
-   .path {
-  transform: translateX(-200px);
-  animation: slide 1s ease-in forwards;
-}
-</style>
