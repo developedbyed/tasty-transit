@@ -6,7 +6,7 @@ import locationIcon from "../locationIcon.svg";
 import SiteLayout from '../layout/SiteLayout.astro';
 ---
 
-<SiteLayout>
+<SiteLayout id="contact-page">
     <div
       class="flex flex-col items-center justify-center md:flex-row md:space-x-20 md:h-full py-4"
     >
@@ -54,3 +54,9 @@ import SiteLayout from '../layout/SiteLayout.astro';
       <ContactForm />
     </div>
 </SiteLayout>
+
+<style>
+  #contact-page {
+  height: 100vh !important;
+  }
+</style>
