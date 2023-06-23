@@ -11,16 +11,16 @@ import SiteLayout from "../layout/SiteLayout.astro";
             class="flex flex-col items-center justify-center md:max-w-screen-2xl mx-auto"
         >
             <section
-                class="flex md:text-left text-center flex-col md:flex-row md:gap-28 my-5"
+                class="flex md:text-left text-center flex-col md:flex-row md:gap-16 mb-5 mt-14"
             >
                 <img
                     src={karenAbout}
                     alt="Karen"
-                    class="md:w-3/5 object-cover md:m-0 m-7 md:rounded-sm rounded-md md:mb-0 md:ml-8"
+                    class="md:w-2/5 object-cover md:m-0 m-7 rounded-md md:mb-0 md:ml-10"
                 />
                 <div class="relative">
                     <h1
-                        class="font-poppins md:text-5xl p-6 text-2xl font-bold text-[#1D1D1D] leading-11 py-3"
+                        class="font-poppins md:text-4xl p-6 text-xl font-bold text-[#1D1D1D] leading-11 py-3 md:mt-10"
                     >
                         Unlock Success with<br /> proven
                         <div class="relative inline-block">
@@ -65,9 +65,9 @@ import SiteLayout from "../layout/SiteLayout.astro";
                         </div>
                     </h1>
 
-                    <div class="flex flex-col">
+                    <div class="flex flex-col md:mr-10">
                         <p
-                            class="text-xl font-poppins p-6 py-7 font-medium leading-8 text-[#5E5E5E] md:text-left md:pr-10"
+                            class="text-base md:text-lg font-poppins p-6 pt-7 pb-2 leading-7 text-[#5E5E5E] md:text-left"
                         >
                             I am a transformational leadership, business and
                             positive attitude coach, with a successful and
@@ -78,7 +78,7 @@ import SiteLayout from "../layout/SiteLayout.astro";
                         </p>
 
                         <p
-                            class="font-poppins md:text-left p-6 py-7 text-xl font-medium leading-8 text-[#5E5E5E] md:pr-10"
+                            class="font-poppins md:text-left p-6 pt-7 pb-2 text-base md:text-lg leading-7 text-[#5E5E5E]"
                         >
                             I hold a Master's Degree in Leadership and
                             Management from Robert Gordon University and a
@@ -90,7 +90,7 @@ import SiteLayout from "../layout/SiteLayout.astro";
                         </p>
 
                         <p
-                            class="font-poppins md:text-left py-7 p-6 text-xl font-medium leading-8 text-[#5E5E5E] md:pr-10"
+                            class="font-poppins md:text-left py-7 p-6 text-base md:text-lg leading-7 text-[#5E5E5E]"
                         >
                             My career has been interesting and varied over the
                             last 25 years. Having first qualifying as a
@@ -108,19 +108,20 @@ import SiteLayout from "../layout/SiteLayout.astro";
             </section>
 
             <section
-                class="text-center md:text-left flex flex-col md:flex-row gap-16 md:mt-28 mt-10"
-            >
+                class="text-center md:text-left flex flex-col md:flex-row md:gap-16 md:mt-28 mt-4">
+               
                 <div
-                    class="bg-[#F7A746] font-poppins text-2xl md:text-5xl font-extrabold text-white relative h-96 md:w-1/2 md:h-auto md:order-1 md:mr-8"
+                    class="bg-[#F7A746] font-poppins text-2xl md:text-4xl font-bold text-white relative h-96 md:w-1/2 md:order-1 md:mr-10 rounded-md md:mt-14"
                 >
-                    <div class="absolute text-left top-10 md:top-14 left-14">
+                    <div class="absolute text-left top-10 md:top-18 left-14 md:left-24
+                    ">
                         EXPLORE <br /> POSIBILITIES.
                     </div>
                     <div
-                        class="absolute top-12 right-16 h-32 w-32 md:top-20 md:right-24 md:h-60 md:w-60"
+                        class="absolute top-12 right-16  h-36 w-36 md:top-14 md:right-52 md:h-40 md:w-40"
                     >
                         <svg
-                            viewBox="0 0 390 308"
+                            viewBox="0 0 390 270"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                         >
@@ -144,14 +145,14 @@ import SiteLayout from "../layout/SiteLayout.astro";
                             </path>
                         </svg>
                     </div>
-                    <div class="absolute text-right top-40 md:top-72 right-14">
+                    <div class="absolute text-right top-40 md:top-40 right-14 md:right-24">
                         GET <br /> CLARITY.
 
                         <div
-                            class="absolute top-12 right-32 h-28 w-28 md:top-12 md:right-60 md:h-48 md:w-52"
+                            class="absolute top-10 right-32 h-28 w-28 md:top-10 md:right-52 md:h-32 md:w-32"
                         >
                             <svg
-                                viewBox="0 0 309 269"
+                                viewBox="0 0 309 250"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg"
                                 class="rotate-6"
@@ -177,22 +178,29 @@ import SiteLayout from "../layout/SiteLayout.astro";
                             </svg>
                         </div>
                     </div>
-                    <div class="absolute bottom-10 md:bottom-14 left-14">
+                    <div class="absolute text-left bottom-10 md:bottom-30 left-14 md:left-24">
+                        
                         TAKE ACTION!
                     </div>
                 </div>
 
                 <div class="md:w-1/2">
                     <div class="relative inline-block">
-                        <div class="relative inline-block md:px-10 md:my-12">
+
+                        <div class="relative flex md:mb-10 md:mt-3 flex-col">
+                       
                             <h1
-                                class="text-2xl md:m-auto font-poppins md:text-5xl font-bold text-[#1D1D1D]"
+                                class="text-xl leading-11 font-poppins md:text-4xl font-bold text-[#1D1D1D] md:ml-10 p-6 md:p-0 pb-3 pt-10"
+                           
                             >
-                                My Approach
-                            </h1>
+                          <div class="relative inline-block"> 
+                            <span>
+                             My Approach     
+                            </span>
+                
                             <svg
-                                class="absolute md:w-80 bottom-0 -z-10 md:-mb-3"
-                                viewBox="0 0 247 12"
+                                class="absolute bottom-0 -z-10 md:-mb-3"
+                                viewBox="0 0 247 13"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg"
                             >
@@ -227,10 +235,13 @@ import SiteLayout from "../layout/SiteLayout.astro";
                                     </linearGradient>
                                 </defs>
                             </svg>
+                             </div>
+                            </h1>
                         </div>
-                        <div class="md:-mt-5">
+                        <div class="flex flex-col md:-mt-5">
                             <p
-                                class="font-poppins text-xl font-medium md:px-10 py-7 p-6 leading-8 text-[#5E5E5E] md:text-left"
+                                class="font-poppins text-base md:px-10 pb-2 pt-7 p-6 leading-7 text-[#5E5E5E] md:text-left md:text-lg"
+                                  
                             >
                                 We will start with an informal consultation
                                 call. This is for us to get to know each other,
@@ -239,7 +250,7 @@ import SiteLayout from "../layout/SiteLayout.astro";
                                 support you proactively.
                             </p>
                             <p
-                                class="font-poppins text-xl font-medium py-7 md:px-10 p-6 leading-8 text-[#5E5E5E] md:text-left"
+                                class="font-poppins text-base md:px-10 pb-2 pt-7 p-6 leading-7 text-[#5E5E5E] md:text-left md:text-lgt"
                             >
                                 You will benefit from my many years of practical
                                 experience, my coaching experience, and my
@@ -248,7 +259,7 @@ import SiteLayout from "../layout/SiteLayout.astro";
                                 approach remains robust and relevant.
                             </p>
                             <p
-                                class="font-poppins text-xl font-medium py-7 md:px-10 p-6 leading-8 text-[#5E5E5E] md:text-left"
+                                class="font-poppins text-base md:px-10 pb-2 pt-7 p-6 leading-7 text-[#5E5E5E] md:text-left md:text-lg"
                             >
                                 Sessions are held in person in a private and
                                 comfortable environment or alternatively via
@@ -265,13 +276,14 @@ import SiteLayout from "../layout/SiteLayout.astro";
             >
                 <img
                     src={karenGuiding}
-                    class="md:w-1/2 md:pt-12 md:pr-12 object-cover md:mb-10 m-7 md:m-0 md:rounded-sm md:ml-8 rounded-md"
+                    alt="Karen"
+                    class="md:w-2/5 object-cover md:mb-10 m-7 md:m-0 md:ml-10 rounded-md"
                 />
-
-                <div class="flex md:my-14 md:pt-16 flex-col relative md:pb-20">
+                <div class="flex md:my-14 flex-col relative">
                     <h1
-                        class="font-poppins text-2xl md:text-5xl font-bold text-[#1D1D1D] p-6 md:pr-10"
+                        class="font-poppins text-xl leading-11 md:text-4xl font-bold text-[#1D1D1D] p-6 py-3"
                     >
+                   
                         My Guiding
                         <div class="relative inline-block">
                             <span> Principles</span>
@@ -314,10 +326,13 @@ import SiteLayout from "../layout/SiteLayout.astro";
                             </svg>
                         </div>
                     </h1>
-                    <div class="md:-mt-2 -mt-6">
+
+                    <div class="md:mr-10 flex flex-col">
+                       
                         <p
-                            class="md:pr-10 p-6 font-poppins text-xl md:text-left font-medium py-7 leading-8 text-[#5E5E5E]"
+                            class="md:pr-10 p-6 font-poppins text-base md:text-left pt-7 pb-2 leading-7 text-[#5E5E5E] md:text-lg"
                         >
+                                        
                             I'm here to help you become your best self through
                             positive, non-judgmental guidance, helping you
                             clarify your motivations and goals. As my client, I
@@ -325,7 +340,7 @@ import SiteLayout from "../layout/SiteLayout.astro";
                             achieve all your life's ambitions.
                         </p>
                         <p
-                            class="md:pr-10 p-6 font-poppins text-xl font-medium md:text-left py-7 leading-8 text-[#5E5E5E]"
+                            class="md:pr-10 p-6 font-poppins text-base md:text-left pt-7 pb-2 leading-7 text-[#5E5E5E] md:text-lg"
                         >
                             My coaching approach is comprehensive, acknowledging
                             that we're shaped by our experiences. I use your
@@ -335,7 +350,7 @@ import SiteLayout from "../layout/SiteLayout.astro";
                             self-limiting beliefs.
                         </p>
                         <p
-                            class="md:pr-10 p-6 font-poppins text-xl font-medium py-7 md:text-left leading-8 text-[#5E5E5E] md:mb-10"
+                            class="md:pr-10 p-6 font-poppins text-base md:text-left pt-7 pb-2 leading-7 text-[#5E5E5E] md:text-lg mb-5"
                         >
                             As a team, we respect your personal values, focusing
                             on solutions to your current challenges using your
@@ -346,7 +361,7 @@ import SiteLayout from "../layout/SiteLayout.astro";
                             outcomes.
                         </p>
                         <button
-                            class="bg-[#1D1D1D] md:w-52 p-4 font-medium md:text-xl rounded-lg text-white md:absolute md:right-0 md:bottom-0 mb-10 mx-auto md:m-12"
+                            class="bg-[#1D1D1D] md:w-52 p-4 font-medium md:text-xl rounded-lg text-white md:absolute md:right-0 md:bottom-0   mx-auto md:mr-24 mb-10"
                         >
                             <a href="/getInTouch">Get in touch</a>
                         </button>
