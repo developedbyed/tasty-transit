@@ -52,5 +52,8 @@ module.exports = {
     },
   },
   plugins: [],
+  variants: {
+    backgroundColor: ['responsive', 'hover', 'focus', 'active'],
+  },
 };
 
