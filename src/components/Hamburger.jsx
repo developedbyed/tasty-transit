@@ -11,9 +11,9 @@ const Hamburger = () => {
         <span className="block w-10 h-1 mb-2 bg-black"></span>
         <span className="block w-10 h-1 bg-black"></span>
     </div> :
-    <div className="cursor-pointer md:hidden mt-2 justify-end self-end" onClick={() => {setOpen(false)}}>
-        <span className="block w-11 h-1 bg-black rotate-45 translate-y-1"></span>
-        <span className="block w-11 h-1 bg-black -rotate-45 -translate-x-0.5"></span>
+    <div className="cursor-pointer md:hidden mt-1 justify-end self-end" onClick={() => {setOpen(false)}}>
+        <span className="block w-10 h-1 bg-black rotate-45 translate-y-1"></span>
+        <span className="block w-10 h-1 bg-black -rotate-45 -translate-x-0.5"></span>
     </div>
     }
     {open && 
