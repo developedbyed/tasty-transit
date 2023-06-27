@@ -34,7 +34,8 @@ module.exports = {
         xxxs: "0.5rem",
         xxs: "0.625rem",
         hero: "3.2rem",
-        header: "2.5rem",
+        headerSize: "2.5rem",
+        paragraphSize: "1.125rem;",
         cardPrice: "2rem",
       },
       height: {

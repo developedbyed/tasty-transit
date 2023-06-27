@@ -7,7 +7,7 @@ let underlineGradient = "animated-underline";
 ---
 
 <div
-  class="flex flex-col items-center lg:justify-center space-y-16 mt-16 lg:mt-20 lg:h-screen"
+  class="flex flex-col items-center lg:justify-center space-y-16 mt-16"
 >
   <div
     class="md:flex md:max-w-7xl md:w-11/12 md:h-4/6 md:space-x-7 lg:space-x-20 md:mt-20 lg:w-10/12 w-11/12 mt-5"
@@ -16,12 +16,12 @@ let underlineGradient = "animated-underline";
       class="md:flex md:flex-col md:w-7/12 md:space-y-5 flex flex-col w-full space-y-3"
     >
       <h1
-        class=` font-bold text-xl w-fit md:md:text-2xl md:font-bold md:text-4xl md:w-fit z-10 ${underlineGradient}`
+        class=`font-bold w-fit md:font-bold text-2xl lg:text-headerSize md:w-fit z-10 ${underlineGradient}`
       >
         Coaching Intro
       </h1>
 
-      <p class="text-custom-gray text-sm md:text-base md:text-md">
+      <p class="text-custom-gray text-paragraphSize">
         As a coach, my mission is to help you shine and achieve your full
         potential. Whether you're facing a new challenge at work, stepping into
         a leadership role, seeking a promotion, or exploring a new direction,
@@ -86,7 +86,7 @@ let underlineGradient = "animated-underline";
 
   .animated-underline {
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   .animated-underline::after {
