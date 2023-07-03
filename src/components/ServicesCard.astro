@@ -3,9 +3,10 @@ const {title, price} = Astro.props;
 ---
 
 <div
+    id="card"
     class="bg-white max-w-md max-h-lg rounded-xl flex items-center flex-col px-12 py-14 md:my-12 hover:border-3 hover:border-solid hover:border-secondary-accent"
 >
-    <h1 class="text-grey-text text-lg font-bold">{title}</h1>
+    <h1 class="text-grey-text text-paragraphSize font-bold">{title}</h1>
     <p class="text-cardPrice font-semibold mb-10">
         £{price} <span class="text-xxxs font-semibold">/session</span>
     </p>
@@ -33,8 +34,41 @@ const {title, price} = Astro.props;
             Offers free initial 30-minute consultation
         </li>
     </ul>
-    <a href='#'
+    <a href='/services/#coachingPackages'
         class="min-w-fit w-full bg-services-black hover:bg-secondary-accent focus:bg-secondary-accent text-white px-4 py-2 rounded-md text-center transition ease-in-out delay-100"
         >Learn More</a
     >
 </div>
+
+<style>
+    #card {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 1s, transform 1s;
+    }
+  
+    #card.appear {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+  
+  <script>
+    function Appear() {
+      let cards = document.querySelectorAll("#card");
+      let screenPosition = window.innerHeight / 1.2;
+  
+      cards.forEach(function (card) {
+        let cardPosition = card.getBoundingClientRect().top;
+  
+        if (cardPosition < screenPosition && !card.classList.contains("appear")) {
+          let delay = Math.random() * 1000;
+          setTimeout(function () {
+            card.classList.add("appear");
+          }, delay);
+        }
+      });
+    }
+  
+    window.addEventListener("scroll", Appear);
+  </script>
