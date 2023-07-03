@@ -1,0 +1,41 @@
+<input type="checkbox" id="hamburger-input" class="burger-shower appearance-none" />
+<label id="hamburger-menu" for="hamburger-input" class="w-10 h-7 md:hidden">
+    <nav id="sidebar-menu" class="absolute -right-full ease-in-out duration-700 flex flex-col gap-10 top-16 p-6 z-10 bg-white border-l-2 border-b-2 border-t-2 border-solid border-secondary-accent w-2/3 h-screen">
+        <ul class="flex flex-col gap-10 text-2xl font-bold">
+            <li><a href="/" class="hover:text-secondary-accent">Home</a></li>
+            <li><a href="/about" class="hover:text-secondary-accent">About</a></li>
+            <li><a href="/services" class="hover:text-secondary-accent">Services</a></li>
+            <li><a href="/#testimonials" class="hover:text-secondary-accent">Testimonials</a></li>
+            <li><a href="#" class="hover:text-secondary-accent">Blog</a></li>
+        </ul>
+        <a href="/getInTouch" class="bg-black text-white p-2 rounded-lg text-center text-xl">Get In Touch</a>
+    </nav>
+</input>
+
+<style>
+#hamburger-menu {
+    background: linear-gradient(
+      to bottom, 
+      #000000, #000000 20%, 
+      white 20%, white 40%, 
+      #000000 40%, #000000 60%, 
+      white 60%, white 80%, 
+      #000000 80%, #000000 100%
+    );
+}
+
+#hamburger-input:checked + #hamburger-menu {
+    background: linear-gradient(
+        to right,
+        #7D2E89, #7D2E89 20%, 
+      white 20%, white 40%, 
+      #7D2E89 40%, #7D2E89 60%, 
+      white 60%, white 80%, 
+      #7D2E89 80%, #7D2E89 100%
+    )
+}
+
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+    right: 0;
+}
+</style>
